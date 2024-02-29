@@ -26,6 +26,11 @@ public class Gun : MonoBehaviour
 
     private void Update()
     {
+        Fire();
+    }
+
+    private void Fire()
+    {
         if (_active & Input.GetKeyDown(KeyCode.Mouse0) & !_reload)
             StartCoroutine(Shot());
     }
