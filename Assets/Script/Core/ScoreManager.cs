@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PrincessCore : MonoBehaviour
+public class ScoreManager : MonoBehaviour
 {
     private int _princesscount = 0;
     private void Start()
@@ -10,19 +10,12 @@ public class PrincessCore : MonoBehaviour
         EventManager.Princess.AddListener(PrincessCollect);
         EventManager.Finish.AddListener(Finish);
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Player")
-        {
-
-        }
-    }
     private void PrincessCollect()
     {
         _princesscount++;
     }
     private void Finish()
     {
-
+        Debug.Log(_princesscount);
     }
 }
