@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [SerializeField] private float Speed = 5f;
     [SerializeField] private float JumpForce = 1f;
     [SerializeField] private float HeightJumpForce = 1f;
     [SerializeField] private float HeightJumpCD = 1f;
-    private int _prinesscount = 0;
     private bool _heightjumpcd = true;
     private bool _isgrounded = false;
     private Rigidbody _rb;
 
     private void Start()
     {
-        EventManager.Princess.AddListener(PrincessCollect);
         EventManager.Ground.AddListener(CheckGround);
         _rb = GetComponent<Rigidbody>();
     }
@@ -41,11 +39,11 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftControl) && _isgrounded && _heightjumpcd)
         {
-            StartCoroutine(heightjumpcp());
+            StartCoroutine(heightjumpcd());
             _rb.AddForce(Vector3.up * HeightJumpForce, ForceMode.VelocityChange);
         }
     }
-    private IEnumerator heightjumpcp()
+    private IEnumerator heightjumpcd()
     {
         _heightjumpcd = false;
         yield return new WaitForSeconds(HeightJumpCD);
@@ -58,9 +56,4 @@ public class NewBehaviourScript : MonoBehaviour
         Vector3 worldVelocity = transform.TransformVector(velocity);
         _rb.velocity = worldVelocity;
     }
-    private void PrincessCollect()
-    {
-        _prinesscount++;
-    }
-
 }
