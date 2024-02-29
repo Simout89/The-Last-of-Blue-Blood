@@ -1,0 +1,20 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class EventManager : MonoBehaviour
+{
+    public static UnityEvent<int> Fire = new UnityEvent<int>();
+    public static UnityEvent<bool> Ground = new UnityEvent<bool>();
+
+    public static void Shot(int bullet)
+    {
+        Fire.Invoke(bullet);
+    }
+    public static void isGround(bool flag)
+    {
+        Ground.Invoke(flag);
+    }
+}
