@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float JumpForce = 1f;
     [SerializeField] private float HeightJumpForce = 1f;
     [SerializeField] private float HeightJumpCD = 1f;
+    [SerializeField] private float HP = 3f;
     private bool _heightjumpcd = true;
     private bool _isgrounded = false;
     private Rigidbody _rb;
