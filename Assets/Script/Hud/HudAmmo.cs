@@ -6,7 +6,7 @@ using UnityEngine;
 public class HudAmmo : MonoBehaviour
 {
     private TMP_Text _ammo;
-    void Start()
+    private void Start()
     {
         _ammo = GetComponent<TMP_Text>();
         EventManager.Fire.AddListener(ChangeText);

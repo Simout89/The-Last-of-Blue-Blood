@@ -14,7 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
     private bool _isgrounded = false;
     private Rigidbody _rb;
 
-    void Start()
+    private void Start()
     {
         EventManager.Princess.AddListener(PrincessCollect);
         EventManager.Ground.AddListener(CheckGround);
@@ -26,18 +26,18 @@ public class NewBehaviourScript : MonoBehaviour
         HeightJump();
         Move();
     }
-    void CheckGround(bool flag)
+    private void CheckGround(bool flag)
     {
         _isgrounded = flag;
     }
-    void Jump()
+    private void Jump()
     {
         if (Input.GetKeyDown(KeyCode.Space) && _isgrounded)
         {
             _rb.AddForce(Vector3.up * JumpForce, ForceMode.VelocityChange);
         }
     }
-    void HeightJump()
+    private void HeightJump()
     {
         if (Input.GetKeyDown(KeyCode.LeftControl) && _isgrounded && _heightjumpcd)
         {
@@ -45,7 +45,7 @@ public class NewBehaviourScript : MonoBehaviour
             _rb.AddForce(Vector3.up * HeightJumpForce, ForceMode.VelocityChange);
         }
     }
-    IEnumerator heightjumpcp()
+    private IEnumerator heightjumpcp()
     {
         _heightjumpcd = false;
         yield return new WaitForSeconds(HeightJumpCD);

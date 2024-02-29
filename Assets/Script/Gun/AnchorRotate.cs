@@ -9,7 +9,7 @@ public class Pistol : MonoBehaviour
 {
     [SerializeField] private GameObject _crosshair;
 
-    void Update()
+    private void Update()
     {
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = 9;

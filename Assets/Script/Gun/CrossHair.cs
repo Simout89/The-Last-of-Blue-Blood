@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CrossHair : MonoBehaviour
 {
-    void LateUpdate()
+    private void LateUpdate()
     {
         Vector3 mouse = Input.mousePosition;
         mouse.z = 3;

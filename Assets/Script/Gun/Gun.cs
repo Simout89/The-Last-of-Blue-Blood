@@ -18,19 +18,19 @@ public class Gun : MonoBehaviour
     private bool _active = true;
     private bool _reload = false;
 
-    void Start()
+    private void Start()
     {
         _ammo = _ammocount;
         EventManager.Shot(_ammo);
     }
 
-    void Update()
+    private void Update()
     {
         if (_active & Input.GetKeyDown(KeyCode.Mouse0) & !_reload)
             StartCoroutine(Shot());
     }
 
-    void SpawnBullet()
+    private void SpawnBullet()
     {
         GameObject bullet = Instantiate(_bullet, _muzzle.position, Quaternion.identity);
         var direction = _muzzle.position - _anchor.position;
