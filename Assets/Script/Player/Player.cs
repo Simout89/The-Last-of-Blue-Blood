@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
@@ -8,12 +9,14 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] private float JumpForce = 1f;
     [SerializeField] private float HeightJumpForce = 1f;
     [SerializeField] private float HeightJumpCD = 1f;
+    private int _prinesscount = 0;
     private bool _heightjumpcd = true;
     private bool _isgrounded = false;
     private Rigidbody _rb;
 
     void Start()
     {
+        EventManager.Princess.AddListener(PrincessCollect);
         EventManager.Ground.AddListener(CheckGround);
         _rb = GetComponent<Rigidbody>();
     }
@@ -55,4 +58,9 @@ public class NewBehaviourScript : MonoBehaviour
         Vector3 worldVelocity = transform.TransformVector(velocity);
         _rb.velocity = worldVelocity;
     }
+    private void PrincessCollect()
+    {
+        _prinesscount++;
+    }
+
 }
