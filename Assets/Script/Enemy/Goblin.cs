@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class Knight : MonoBehaviour
+public class Goblin : MonoBehaviour
 {
     [SerializeField] private int Health = 5;
     [SerializeField] private float Speed = 1f;

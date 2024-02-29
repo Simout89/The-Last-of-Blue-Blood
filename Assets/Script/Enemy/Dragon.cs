@@ -18,6 +18,10 @@ public class Dragon : MonoBehaviour
     {
         Fire();
     }
+    private void FixedUpdate()
+    {
+        Rotate();
+    }
     private void Fire()
     {
         if(_shotcd)
@@ -50,5 +54,19 @@ public class Dragon : MonoBehaviour
     {
         if (Health <= 0)
             Destroy(gameObject);
+    }
+    private void Rotate()
+    {
+        if (transform.position.x - player.transform.position.x < 0f)
+        {
+            Vector3 currentRotation = transform.rotation.eulerAngles;
+            currentRotation.y = 0f;
+            transform.rotation = Quaternion.Euler(currentRotation);
+        }else
+        {
+            Vector3 currentRotation = transform.rotation.eulerAngles;
+            currentRotation.y = 180f;
+            transform.rotation = Quaternion.Euler(currentRotation);
+        }
     }
 }
