@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,25 +9,27 @@ public class Goblin : MonoBehaviour
     [SerializeField] private int Health = 5;
     [SerializeField] private float Speed = 1f;
     [SerializeField] private float StayDelay = 1f;
+    [SerializeField] private float PlayerDistanceDetection = 1f;
     [SerializeField] Transform Point;
+    private GameObject player;
     private Vector3 _point1;
     private Vector3 _point2;
     private Rigidbody _rb;
     private bool target = true; // true = p1 , false = p2
-    private bool _playernear = false;
     private void Start()
     {
         _rb = GetComponent<Rigidbody>();
         _point1 = Point.position;
         _point2 = gameObject.transform.position;
+        player = GameObject.Find("Player");
     }
-    private void Update()
+    private void FixedUpdate()
     {
         CheckPlayerNear();
     }
     private void CheckPlayerNear()
     {
-        if(_playernear)
+        if(_playernear())
         {
             ChangeTarget();
         }
@@ -34,23 +37,35 @@ public class Goblin : MonoBehaviour
     private void ChangeTarget()
     {
         if (target)
-            GotoPoint1();
+            StartCoroutine(GotoPoint1());
         else
-            GotoPoint2();
+            StartCoroutine(GotoPoint2());
     }
-    private void GotoPoint1()
+    IEnumerator GotoPoint1()
     {
-        Vector3 direction = (_point1 - transform.position).normalized;
-        _rb.MovePosition(_rb.position + direction * Speed * Time.fixedDeltaTime);
-        if(Vector3.Distance(transform.position, _point1) < 0.1)
+        if (Vector3.Distance(transform.position, _point1) < 0.1)
+        {
+            yield return new WaitForSeconds(StayDelay);
             target = false;
+        }
+        else
+        {
+            Vector3 direction = (_point1 - transform.position).normalized;
+            _rb.MovePosition(_rb.position + direction * Speed * Time.fixedDeltaTime);
+        }
     }
-    private void GotoPoint2()
+    IEnumerator GotoPoint2()
     {
-        Vector3 direction = (_point2 - transform.position).normalized;
-        _rb.MovePosition(_rb.position + direction * Speed * Time.fixedDeltaTime);
         if (Vector3.Distance(transform.position, _point2) < 0.1)
+        {
+            yield return new WaitForSeconds(StayDelay);
             target = true;
+        }
+        else
+        {
+            Vector3 direction = (_point2 - transform.position).normalized;
+            _rb.MovePosition(_rb.position + direction * Speed * Time.fixedDeltaTime);
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -69,14 +84,12 @@ public class Goblin : MonoBehaviour
         if (Health <= 0)
             Destroy(gameObject);
     }
-    private void OnTriggerEnter(Collider other)
+    private bool _playernear()
     {
-        if (other.tag == "Player")
-            _playernear = true;
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-            _playernear = false;
+        Debug.Log(Vector3.Distance(transform.position, player.transform.position));
+        if(Vector3.Distance(transform.position, player.transform.position) < PlayerDistanceDetection)
+            return true;
+        else
+            return false;
     }
 }
