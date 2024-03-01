@@ -8,6 +8,7 @@ public class Dragon : MonoBehaviour
     [SerializeField] private Transform Mouth;
     [SerializeField] private float FireRate = 1f;
     [SerializeField] private GameObject FireBall;
+    [SerializeField] private float ForceShot = 1f;
     private GameObject player;
     private bool _shotcd = true;
     private bool _playernear = false;
@@ -35,7 +36,7 @@ public class Dragon : MonoBehaviour
     {
         GameObject fireball = Instantiate(FireBall, Mouth.position, Quaternion.identity);
         var direction = player.transform.position - Mouth.position;
-        fireball.GetComponent<Rigidbody>().AddForce(direction * 10f, ForceMode.VelocityChange);
+        fireball.GetComponent<Rigidbody>().AddForce(direction * ForceShot, ForceMode.VelocityChange);
     }
     IEnumerator shotcd()
     {
