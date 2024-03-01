@@ -45,7 +45,6 @@ public class Gun : MonoBehaviour
     {
         _fire.Play();
         SpawnBullet();
-        Debug.Log("Fire");
         _ammo--;
         CheckAmmo();
         EventManager.Shot(_ammo);
@@ -63,7 +62,6 @@ public class Gun : MonoBehaviour
 
     IEnumerator Reload()
     {
-        Debug.Log("Reload");
         _reload = true;
         yield return new WaitForSeconds(_reloadtime);
         _ammo = _ammocount;
