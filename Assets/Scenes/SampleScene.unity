@@ -283,7 +283,6 @@ GameObject:
   - component: {fileID: 462090055}
   - component: {fileID: 462090054}
   - component: {fileID: 462090053}
-  - component: {fileID: 462090058}
   m_Layer: 0
   m_Name: Dragon
   m_TagString: Untagged
@@ -308,6 +307,7 @@ MonoBehaviour:
   FireRate: 1
   FireBall: {fileID: 5457121156300497297, guid: fa34a3cc43905814999f1d11cbe9939f, type: 3}
   ForceShot: 1
+  PlayerDistanceDetection: 10
 --- !u!65 &462090054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -395,27 +395,6 @@ Transform:
   - {fileID: 1611999648}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &462090058
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462090052}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 16.79862, y: 6.158712, z: 1.9106089}
-  m_Center: {x: -1.2575207, y: -0.42656446, z: -0.031031668}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1152,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045775637}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}

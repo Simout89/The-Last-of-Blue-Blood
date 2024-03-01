@@ -9,24 +9,26 @@ public class Dragon : MonoBehaviour
     [SerializeField] private float FireRate = 1f;
     [SerializeField] private GameObject FireBall;
     [SerializeField] private float ForceShot = 1f;
+    [SerializeField] private float PlayerDistanceDetection = 1f;
+
     private GameObject player;
     private bool _shotcd = true;
-    private bool _playernear = false;
     private void Start()
     {
         player = GameObject.Find("Player");
     }
     private void Update()
     {
-        Fire();
+
     }
     private void FixedUpdate()
     {
+        Fire();
         Rotate();
     }
     private void Fire()
     {
-        if(_shotcd && _playernear)
+        if(_shotcd && _playernear())
         {
             StartCoroutine(shotcd());
             SpawnFireBall();
@@ -44,13 +46,13 @@ public class Dragon : MonoBehaviour
         yield return new WaitForSeconds(FireRate);
         _shotcd = true;
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {
             Health--;
             CheckHealt();
-        }   
+        }
     }
     private void CheckHealt()
     {
@@ -71,14 +73,11 @@ public class Dragon : MonoBehaviour
             transform.rotation = Quaternion.Euler(currentRotation);
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private bool _playernear()
     {
-        if(other.tag == "Player")
-            _playernear = true;
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-            _playernear = false;
+        if (Vector3.Distance(transform.position, player.transform.position) < PlayerDistanceDetection)
+            return true;
+        else
+            return false;
     }
 }

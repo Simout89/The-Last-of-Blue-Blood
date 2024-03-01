@@ -67,14 +67,18 @@ public class Goblin : MonoBehaviour
             _rb.MovePosition(_rb.position + direction * Speed * Time.fixedDeltaTime);
         }
     }
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {
             Health--;
             CheckHealt();
         }
-        if(collision.gameObject.tag == "Player")
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
         {
             EventManager.damageplayer();
         }
@@ -86,7 +90,6 @@ public class Goblin : MonoBehaviour
     }
     private bool _playernear()
     {
-        Debug.Log(Vector3.Distance(transform.position, player.transform.position));
         if(Vector3.Distance(transform.position, player.transform.position) < PlayerDistanceDetection)
             return true;
         else

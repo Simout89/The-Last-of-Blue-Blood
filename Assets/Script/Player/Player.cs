@@ -25,10 +25,27 @@ public class Player : MonoBehaviour
         Jump();
         HeightJump();
         Move();
+        Squat();
     }
     private void CheckGround(bool flag)
     {
         _isgrounded = flag;
+    }
+    private void Squat()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Vector3 tran = transform.position;
+            tran.y -= 0.409f;
+            gameObject.transform.localScale = new Vector3(1f, 0.5f, 1f);
+            gameObject.transform.position = tran;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            Vector3 tran = transform.position;
+            tran.y += 0.409f;
+            gameObject.transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
     private void Jump()
     {
