@@ -285,12 +285,12 @@ GameObject:
   - component: {fileID: 462090053}
   - component: {fileID: 462090058}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &462090053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ Transform:
   m_GameObject: {fileID: 462090052}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.28079, y: 4.7, z: -0.23555756}
+  m_LocalPosition: {x: -13.22, y: 6.58, z: -0.23555756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -414,8 +414,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 19.780155, y: 8.915581, z: 1.9106089}
-  m_Center: {x: 0.034049988, y: -1.8049984, z: -0.031031668}
+  m_Size: {x: 16.79862, y: 6.158712, z: 1.9106089}
+  m_Center: {x: -1.2575207, y: -0.42656446, z: -0.031031668}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +510,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &749981778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 749981779}
+  m_Layer: 0
+  m_Name: Goblin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &749981779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749981778}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.290606, y: -5.470348, z: 31.839058}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 830134722}
+  - {fileID: 1845315203}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &800106488
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,12 +653,12 @@ GameObject:
   - component: {fileID: 830134717}
   - component: {fileID: 830134723}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &830134717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,12 +780,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830134716}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.52, y: -1.81, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.229395, y: 3.660348, z: -31.839058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 749981779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &830134723
 BoxCollider:
@@ -6616,12 +6649,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1845315203}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1845315203
 Transform:
   m_ObjectHideFlags: 0
@@ -6631,11 +6664,11 @@ Transform:
   m_GameObject: {fileID: 1845315202}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.9314957, y: -1.81, z: 0}
+  m_LocalPosition: {x: 0.35911036, y: 3.660348, z: -31.839058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 749981779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992955215
 GameObject:
@@ -6678,6 +6711,5 @@ SceneRoots:
   - {fileID: 1045775642}
   - {fileID: 964467469}
   - {fileID: 462090057}
-  - {fileID: 830134722}
-  - {fileID: 1845315203}
   - {fileID: 1831724009}
+  - {fileID: 749981779}

@@ -20,7 +20,11 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _particle.Play();
-        Destroy(gameObject);
+        if(other.tag != "Player")
+        {
+            _particle.Play();
+            Debug.Log(other.name);
+            Destroy(gameObject);
+        }
     }
 }

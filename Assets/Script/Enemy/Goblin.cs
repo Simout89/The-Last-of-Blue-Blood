@@ -7,6 +7,7 @@ public class Goblin : MonoBehaviour
 {
     [SerializeField] private int Health = 5;
     [SerializeField] private float Speed = 1f;
+    [SerializeField] private float StayDelay = 1f;
     [SerializeField] Transform Point;
     private Vector3 _point1;
     private Vector3 _point2;
