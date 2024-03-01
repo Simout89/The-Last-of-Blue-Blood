@@ -18,9 +18,9 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         _particle.Play();
         Destroy(gameObject);
-    }    
+    }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class FireBall : MonoBehaviour
 {
@@ -15,9 +16,9 @@ public class FireBall : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.tag == "Player")
+        if (other.tag == "Player")
             EventManager.damageplayer();
         Destroy(gameObject);
     }

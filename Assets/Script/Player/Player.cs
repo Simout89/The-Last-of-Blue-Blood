@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
         EventManager.Ground.AddListener(CheckGround);
         _rb = GetComponent<Rigidbody>();
     }
-    private void Update ()
+    private void Update()
     {
         Jump();
         HeightJump();
