@@ -12,6 +12,7 @@ public class Goblin : MonoBehaviour
     private Vector3 _point2;
     private Rigidbody _rb;
     private bool target = true; // true = p1 , false = p2
+    private bool _playernear = false;
     private void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -20,7 +21,14 @@ public class Goblin : MonoBehaviour
     }
     private void Update()
     {
-        ChangeTarget();
+        CheckPlayerNear();
+    }
+    private void CheckPlayerNear()
+    {
+        if(_playernear)
+        {
+            ChangeTarget();
+        }
     }
     private void ChangeTarget()
     {
@@ -50,10 +58,24 @@ public class Goblin : MonoBehaviour
             Health--;
             CheckHealt();
         }
+        if(collision.gameObject.tag == "Player")
+        {
+            EventManager.damageplayer();
+        }
     }
     private void CheckHealt()
     {
         if (Health <= 0)
             Destroy(gameObject);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+            _playernear = true;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+            _playernear = false;
     }
 }

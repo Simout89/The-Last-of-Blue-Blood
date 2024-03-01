@@ -17,6 +17,8 @@ public class FireBall : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.tag == "Player")
+            EventManager.damageplayer();
         Destroy(gameObject);
     }
 }

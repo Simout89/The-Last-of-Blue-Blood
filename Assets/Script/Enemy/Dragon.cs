@@ -10,6 +10,7 @@ public class Dragon : MonoBehaviour
     [SerializeField] private GameObject FireBall;
     private GameObject player;
     private bool _shotcd = true;
+    private bool _playernear = false;
     private void Start()
     {
         player = GameObject.Find("Player");
@@ -24,7 +25,7 @@ public class Dragon : MonoBehaviour
     }
     private void Fire()
     {
-        if(_shotcd)
+        if(_shotcd && _playernear)
         {
             StartCoroutine(shotcd());
             SpawnFireBall();
@@ -68,5 +69,15 @@ public class Dragon : MonoBehaviour
             currentRotation.y = 180f;
             transform.rotation = Quaternion.Euler(currentRotation);
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player")
+            _playernear = true;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+            _playernear = false;
     }
 }

@@ -10,6 +10,7 @@ public class EventManager : MonoBehaviour
     public static UnityEvent<bool> Ground = new UnityEvent<bool>();
     public static UnityEvent Princess = new UnityEvent();
     public static UnityEvent Finish = new UnityEvent();
+    public static UnityEvent DamagePlayer = new UnityEvent();
     public static void Shot(int bullet)
     {
         Fire.Invoke(bullet);
@@ -26,5 +27,9 @@ public class EventManager : MonoBehaviour
     public static void finish()
     {
         Finish.Invoke();
+    }
+    public static void damageplayer()
+    {
+        DamagePlayer.Invoke();
     }
 }

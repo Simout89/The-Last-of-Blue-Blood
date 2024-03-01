@@ -304,7 +304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 5
   Mouth: {fileID: 1611999648}
-  FireRate: 3.14
+  FireRate: 0.21
   FireBall: {fileID: 5457121156300497297, guid: fa34a3cc43905814999f1d11cbe9939f, type: 3}
 --- !u!65 &462090054
 BoxCollider:

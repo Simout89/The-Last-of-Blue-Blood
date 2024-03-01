@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        EventManager.DamagePlayer.AddListener(Damage);
         EventManager.Ground.AddListener(CheckGround);
         _rb = GetComponent<Rigidbody>();
     }
@@ -56,5 +57,15 @@ public class Player : MonoBehaviour
         velocity.y = _rb.velocity.y;
         Vector3 worldVelocity = transform.TransformVector(velocity);
         _rb.velocity = worldVelocity;
+    }
+    private void Damage()
+    {
+        Health--;
+        CheckHealth();
+    }
+    private void CheckHealth()
+    {
+        if (Health <= 0)
+            Debug.Log("Die");
     }
 }
