@@ -20,8 +20,11 @@ public class Dragon : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Fire();
         Rotate();
+    }
+    private void LateUpdate()
+    {
+        Fire();
     }
     private void Fire()
     {
