@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float HeightJumpForce = 1f;
     [SerializeField] private float HeightJumpCD = 1f;
     [SerializeField] private float Health = 3f;
+    [SerializeField] private GameObject body;
+    private CapsuleCollider _capsule;
     private bool _heightjumpcd = true;
     private bool _isgrounded = false;
     private Rigidbody _rb;
@@ -19,6 +22,8 @@ public class Player : MonoBehaviour
         EventManager.DamagePlayer.AddListener(Damage);
         EventManager.Ground.AddListener(CheckGround);
         _rb = GetComponent<Rigidbody>();
+        _capsule = GetComponent<CapsuleCollider>();
+        
     }
     private void Update()
     {
@@ -35,18 +40,19 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            Vector3 tran = transform.position;
-            tran.y -= 0.409f;
-            gameObject.transform.localScale = new Vector3(1f, 0.5f, 1f);
-            gameObject.transform.position = tran;
-            EventManager.squat(true);
+            _capsule.height = 1f;
+            body.transform.localScale = new Vector3(1f, 0.5f, 1f);
+            Vector3 pos = transform.position;
+            pos.y -= 0.409f;
+            transform.position = pos;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            Vector3 tran = transform.position;
-            tran.y += 0.409f;
-            gameObject.transform.localScale = new Vector3(1f, 1f, 1f);
-            EventManager.squat(false);
+            Vector3 pos = transform.position;
+            pos.y += 0.409f;
+            transform.position = pos;
+            _capsule.height = 2f;
+            body.transform.localScale = new Vector3(1f, 1f, 1f);
         }
     }
     private void Jump()
