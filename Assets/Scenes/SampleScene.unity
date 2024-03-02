@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 79273240}
   - component: {fileID: 79273239}
   - component: {fileID: 79273241}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
   FireRate: 1
   FireBall: {fileID: 5457121156300497297, guid: fa34a3cc43905814999f1d11cbe9939f, type: 3}
   ForceShot: 1
-  PlayerDistanceDetection: 5
+  PlayerDistanceDetection: 30
 --- !u!65 &462090054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 800106490}
   - component: {fileID: 800106492}
   - component: {fileID: 800106493}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Hud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 120
   m_CollisionDetection: 0
@@ -1016,9 +1016,8 @@ GameObject:
   - component: {fileID: 975254037}
   - component: {fileID: 975254036}
   - component: {fileID: 975254035}
-  - component: {fileID: 975254034}
   - component: {fileID: 975254033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrossHair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,27 +1036,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a6553b3b260fe4cb1d01434f0a2d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &975254034
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975254032}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &975254035
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1118,7 +1096,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -96.38243, y: 22.803413, z: 61.113155}
-  m_LocalScale: {x: 2.1283185, y: 2.1283185, z: 2.1283185}
+  m_LocalScale: {x: 22.63, y: 22.63, z: 22.63}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 800106489}
@@ -6586,9 +6564,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Test-1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6c7063251871934a9c85ffced217eaf, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: e6c7063251871934a9c85ffced217eaf, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: e6c7063251871934a9c85ffced217eaf, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
