@@ -23,7 +23,6 @@ public class Player : MonoBehaviour
         EventManager.Ground.AddListener(CheckGround);
         _rb = GetComponent<Rigidbody>();
         _capsule = GetComponent<CapsuleCollider>();
-        
     }
     private void Update()
     {
@@ -38,7 +37,7 @@ public class Player : MonoBehaviour
     }
     private void Squat()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             _capsule.height = 1f;
             body.transform.localScale = new Vector3(1f, 0.5f, 1f);
@@ -46,7 +45,7 @@ public class Player : MonoBehaviour
             pos.y -= 0.409f;
             transform.position = pos;
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.S))
         {
             _capsule.height = 2f;
             body.transform.localScale = new Vector3(1f, 1f, 1f);
@@ -58,14 +57,14 @@ public class Player : MonoBehaviour
     }
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && _isgrounded)
+        if (Input.GetKeyDown(KeyCode.W) && _isgrounded)
         {
             _rb.AddForce(Vector3.up * JumpForce, ForceMode.VelocityChange);
         }
     }
     private void HeightJump()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && _isgrounded && _heightjumpcd)
+        if (Input.GetKeyDown(KeyCode.Space) && _isgrounded && _heightjumpcd)
         {
             StartCoroutine(heightjumpcd());
             _rb.AddForce(Vector3.up * HeightJumpForce, ForceMode.VelocityChange);
