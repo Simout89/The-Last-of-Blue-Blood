@@ -8,6 +8,7 @@ public class EventManager : MonoBehaviour
 {
     public static UnityEvent<int> Fire = new UnityEvent<int>();
     public static UnityEvent<bool> Ground = new UnityEvent<bool>();
+    public static UnityEvent<bool> Squat = new UnityEvent<bool>();
     public static UnityEvent Princess = new UnityEvent();
     public static UnityEvent Finish = new UnityEvent();
     public static UnityEvent DamagePlayer = new UnityEvent();
@@ -31,5 +32,9 @@ public class EventManager : MonoBehaviour
     public static void damageplayer()
     {
         DamagePlayer.Invoke();
+    }
+    public static void squat(bool flag)
+    {
+        Squat.Invoke(flag);
     }
 }

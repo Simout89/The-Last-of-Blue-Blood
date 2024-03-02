@@ -39,12 +39,14 @@ public class Player : MonoBehaviour
             tran.y -= 0.409f;
             gameObject.transform.localScale = new Vector3(1f, 0.5f, 1f);
             gameObject.transform.position = tran;
+            EventManager.squat(true);
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             Vector3 tran = transform.position;
             tran.y += 0.409f;
             gameObject.transform.localScale = new Vector3(1f, 1f, 1f);
+            EventManager.squat(false);
         }
     }
     private void Jump()
