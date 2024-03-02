@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.UI.Image;
 
 public class Dragon : MonoBehaviour
 {
@@ -16,10 +17,6 @@ public class Dragon : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
-    }
-    private void Update()
-    {
-
     }
     private void FixedUpdate()
     {
@@ -76,8 +73,26 @@ public class Dragon : MonoBehaviour
     private bool _playernear()
     {
         if (Vector3.Distance(transform.position, player.transform.position) < PlayerDistanceDetection)
-            return true;
+        {
+            if(_raycastcheck())
+                return true;
+            else 
+                return false;
+        }
         else
+            return false;
+    }
+    private bool _raycastcheck()
+    {
+        var direction = player.transform.position - Mouth.position;
+        RaycastHit hit;
+        if (Physics.Raycast(Mouth.position, direction, out hit, PlayerDistanceDetection))
+        {
+            if (hit.collider.gameObject.tag == "Player")
+                return true;
+            else
+                return false;
+        }else
             return false;
     }
 }
