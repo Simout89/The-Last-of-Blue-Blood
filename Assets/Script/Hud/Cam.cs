@@ -9,8 +9,6 @@ public class Cam : MonoBehaviour
     [SerializeField] private Transform _target;
     [SerializeField] private float _speed;
     private Camera mainCamera;
-    private float _camdistance = -10f;
-    private float _y = 0;
     private void Start()
     {
         mainCamera = GetComponent<Camera>();
@@ -19,20 +17,18 @@ public class Cam : MonoBehaviour
     private void LateUpdate()
     {
         var target = _target.position;
-        target.z = _camdistance;
-        target.y += _y;
+        target.z = -10f;
         transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * _speed);
     }
     private void CamZoom(bool flag)
     {
         if(flag)
         {
-            _y = 0.5f;
-            Debug.Log(_y);
+            mainCamera.fieldOfView = 40;
         }
         else
         {
-            _y = 0f;
+            mainCamera.fieldOfView = 60;
         }
     }
 }

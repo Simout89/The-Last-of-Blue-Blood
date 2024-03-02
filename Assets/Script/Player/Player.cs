@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
             Vector3 pos = transform.position;
             pos.y -= 0.409f;
             transform.position = pos;
+            EventManager.squat(true);
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
@@ -53,6 +54,8 @@ public class Player : MonoBehaviour
             transform.position = pos;
             _capsule.height = 2f;
             body.transform.localScale = new Vector3(1f, 1f, 1f);
+            EventManager.squat(false);
+
         }
     }
     private void Jump()
