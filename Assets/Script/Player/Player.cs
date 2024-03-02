@@ -49,11 +49,11 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
+            _capsule.height = 2f;
+            body.transform.localScale = new Vector3(1f, 1f, 1f);
             Vector3 pos = transform.position;
             pos.y += 0.409f;
             transform.position = pos;
-            _capsule.height = 2f;
-            body.transform.localScale = new Vector3(1f, 1f, 1f);
             EventManager.squat(false);
 
         }
