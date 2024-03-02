@@ -15,6 +15,8 @@ public class Goblin : MonoBehaviour
     private Vector3 _point1;
     private Vector3 _point2;
     private Rigidbody _rb;
+    private bool _playercontact = false;
+    private bool _damagedelay = true;
     private bool target = true; // true = p1 , false = p2
     private void Start()
     {
@@ -26,6 +28,21 @@ public class Goblin : MonoBehaviour
     private void FixedUpdate()
     {
         CheckPlayerNear();
+        DamagePlayer();
+    }
+    private void DamagePlayer()
+    {
+        if(_playercontact && _damagedelay)
+        {
+            StartCoroutine(damageplayer());
+        }
+    }
+    IEnumerator damageplayer()
+    {
+        _damagedelay = false;
+        EventManager.damageplayer();
+        yield return new WaitForSeconds(0.5f);
+        _damagedelay = true;
     }
     private void CheckPlayerNear()
     {
@@ -41,6 +58,7 @@ public class Goblin : MonoBehaviour
         else
             StartCoroutine(GotoPoint2());
     }
+    private 
     IEnumerator GotoPoint1()
     {
         if (Vector3.Distance(transform.position, _point1) < 0.1)
@@ -80,7 +98,14 @@ public class Goblin : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            EventManager.damageplayer();
+            _playercontact = true;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            _playercontact = false;
         }
     }
     private void CheckHealt()
