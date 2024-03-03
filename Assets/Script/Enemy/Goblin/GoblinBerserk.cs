@@ -16,8 +16,20 @@ public class GoblinBerserk : MonoBehaviour
 
     private void HandleBerserk()
     {
+        Rotate();
         Vector3 direction = (_goblininput.Player.transform.position - _goblininput.GoblinBody.transform.position).normalized;
         direction.y = 0;
         _goblininput.GoblinRigidbody.MovePosition(_goblininput.GoblinRigidbody.position + direction * (Speed * 2) * Time.fixedDeltaTime);
+    }
+    private void Rotate()
+    {
+        if (_goblininput.GoblinBody.transform.position.x - _goblininput.Player.transform.position.x < 0f)
+        {
+            GoblinRotate.OnRotateRight.Invoke();
+        }
+        else
+        {
+            GoblinRotate.OnRotateLeft.Invoke();
+        }
     }
 }
