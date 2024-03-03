@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
+using static UnityEngine.GraphicsBuffer;
 
 public class Gun : MonoBehaviour
 {
@@ -17,6 +19,8 @@ public class Gun : MonoBehaviour
     private int _ammo;
     private bool _active = true;
     private bool _reload = false;
+    private bool _gunstuck = false;
+    private float _ypos = 1.568f;
 
     private void Start()
     {
@@ -28,6 +32,11 @@ public class Gun : MonoBehaviour
     {
         Fire();
     }
+    private void LateUpdate()
+    {
+        GunRests();
+    }
+
 
     private void Fire()
     {
@@ -67,5 +76,32 @@ public class Gun : MonoBehaviour
         _ammo = _ammocount;
         EventManager.Shot(_ammocount);
         _reload = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if ((other.tag != "Bullet") && (other.tag != "Player"))
+            _gunstuck = true;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+       if((other.tag != "Bullet") && (other.tag != "Player"))
+            _gunstuck = false;
+    }
+
+    private void GunRests()
+    {
+        if ( _gunstuck )
+        {
+            var pos = transform.localPosition;
+            pos.y-=2f;
+            transform.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 2f);
+        }
+        else
+        {
+            var pos = transform.localPosition;
+            pos.y = _ypos;
+            transform.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 1f);
+        }
     }
 }
