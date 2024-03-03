@@ -94,7 +94,7 @@ public class Gun : MonoBehaviour
         if ( _gunstuck )
         {
             var pos = transform.localPosition;
-            pos.y-=2f;
+            pos.y =0f;
             transform.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 2f);
         }
         else
