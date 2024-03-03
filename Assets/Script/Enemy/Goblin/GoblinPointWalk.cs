@@ -10,6 +10,7 @@ public class GoblinPointWalk : MonoBehaviour
     [SerializeField] private float StayDelay = 1f;
     private GoblinInput _goblininput;
     private bool _target = true;
+    private bool _lasttarget = true;
     public static UnityEvent OnPointWalk = new UnityEvent();
 
     private void Awake()
@@ -19,7 +20,14 @@ public class GoblinPointWalk : MonoBehaviour
     }
     private void HandlePointWalk()
     {
-        Debug.Log(_target);
+        if(_lasttarget != _target)
+        {
+            if (_lasttarget)
+                GoblinRotate.OnRotateLeft.Invoke();
+            else
+                GoblinRotate.OnRotateRight.Invoke();
+            _lasttarget = _target;
+        }
         if (_target)
             StartCoroutine(GotoPoint1());
         else
