@@ -11,7 +11,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float HeightJumpForce = 1f;
     [SerializeField] private float HeightJumpCD = 1f;
     [SerializeField] private float Health = 3f;
-    [SerializeField] private GameObject body;
+    [SerializeField] private GameObject body; 
+
+    private float _movespeedmultiplier = 1f;
     private CapsuleCollider _capsule;
     private bool _heightjumpcd = true;
     private bool _isgrounded = false;
@@ -35,6 +37,10 @@ public class Player : MonoBehaviour
     private void CheckGround(bool flag)
     {
         _isgrounded = flag;
+        if (flag)
+            _movespeedmultiplier = 1f;
+        else
+            _movespeedmultiplier = 0.5f;
     }
     private void Squat()
     {
@@ -79,7 +85,7 @@ public class Player : MonoBehaviour
     }
     private void Move()
     {
-        Vector3 velocity = new Vector3(Input.GetAxisRaw("Horizontal"), 0, 0) * Speed;
+        Vector3 velocity = new Vector3(Input.GetAxisRaw("Horizontal"), 0, 0) * Speed * _movespeedmultiplier;
         velocity.y = _rb.velocity.y;
         Vector3 worldVelocity = transform.TransformVector(velocity);
         _rb.velocity = worldVelocity;
@@ -89,6 +95,7 @@ public class Player : MonoBehaviour
         Health--;
         CheckHealth();
     }
+    
     private void CheckHealth()
     {
         if (Health <= 0)
