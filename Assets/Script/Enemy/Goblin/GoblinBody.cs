@@ -22,7 +22,7 @@ public class GoblinBody : MonoBehaviour
     IEnumerator damageplayer()
     {
         _damagedelay = false;
-        EventManager.damageplayer();
+        PlayerHealth.DamageToPlayer.Invoke();
         yield return new WaitForSeconds(0.5f);
         _damagedelay = true;
     }

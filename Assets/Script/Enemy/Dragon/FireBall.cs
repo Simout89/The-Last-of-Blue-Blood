@@ -19,8 +19,8 @@ public class FireBall : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-            EventManager.damageplayer();
-        if( other.tag != "Gun")
+            PlayerHealth.DamageToPlayer.Invoke();
+        if ( other.tag != "Gun")
         {
             Destroy(gameObject);
         }
