@@ -80,13 +80,17 @@ public class Gun : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if ((other.tag != "Bullet") && (other.tag != "Player"))
+        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy"))
+        {
             _gunstuck = true;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-       if((other.tag != "Bullet") && (other.tag != "Player"))
+        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy"))
+        {
             _gunstuck = false;
+        }
     }
 
     private void GunRests()
