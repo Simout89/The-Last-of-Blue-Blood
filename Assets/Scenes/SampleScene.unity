@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 704638113}
   - component: {fileID: 704638108}
   m_Layer: 0
-  m_Name: Body
+  m_Name: GoblinBody
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -680,7 +680,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 749981779}
-  - component: {fileID: 749981780}
+  - component: {fileID: 749981782}
+  - component: {fileID: 749981781}
+  - component: {fileID: 749981783}
+  - component: {fileID: 749981785}
+  - component: {fileID: 749981784}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Untagged
@@ -705,7 +709,7 @@ Transform:
   - {fileID: 704638112}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &749981780
+--- !u!114 &749981781
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -714,15 +718,65 @@ MonoBehaviour:
   m_GameObject: {fileID: 749981778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 134fd545f04de6243acb99dfbad56cfb, type: 3}
+  m_Script: {fileID: 11500000, guid: c98c927c5adc7d4448c7f6076f80a48c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1.5
-  StayDelay: 1
-  PlayerDistanceDetection: 30
+  Speed: 0.5
+  StayDelay: 2
+--- !u!114 &749981782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749981778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b608dc01e3077f43acf0655770005fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   Point: {fileID: 484080122}
-  Body: {fileID: 704638107}
-  BodyRB: {fileID: 704638108}
+  GoblinBody: {fileID: 704638107}
+  GoblinRigidbody: {fileID: 704638108}
+  Player: {fileID: 1634860722}
+--- !u!114 &749981783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749981778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36092496dd06d64ab785f98da8ea2bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &749981784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749981778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864fef5345e389f4a95b668d1c40c28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerDistanceDetection: 10
+--- !u!114 &749981785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749981778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa3fec033802024f9cdf90078813931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 0.3
 --- !u!1 &800106488
 GameObject:
   m_ObjectHideFlags: 0
@@ -6480,7 +6534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbebc938aa6102f4494f717627b73406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
+  Speed: 5
 --- !u!114 &1634860729
 MonoBehaviour:
   m_ObjectHideFlags: 0
