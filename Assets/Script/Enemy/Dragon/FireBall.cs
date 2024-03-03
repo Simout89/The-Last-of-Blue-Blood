@@ -20,6 +20,9 @@ public class FireBall : MonoBehaviour
     {
         if (other.tag == "Player")
             EventManager.damageplayer();
-        Destroy(gameObject);
+        if( other.tag != "Gun")
+        {
+            Destroy(gameObject);
+        }
     }
 }
