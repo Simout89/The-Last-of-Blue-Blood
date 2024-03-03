@@ -95,6 +95,7 @@ public class Player : MonoBehaviour
         Health--;
         CheckHealth();
     }
+    
     private void CheckHealth()
     {
         if (Health <= 0)

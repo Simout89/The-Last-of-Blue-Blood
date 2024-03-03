@@ -52,9 +52,12 @@ public class Goblin : MonoBehaviour
     private void berserkmode()
     {
         Rotate();
-        Vector3 direction = (player.transform.position - Body.transform.position).normalized;
-        direction.y = 0;
-        BodyRB.MovePosition(BodyRB.position + direction * (Speed * 2) * Time.fixedDeltaTime);
+        if (Vector3.Distance(Body.transform.position, player.transform.position) > 1.3)
+        {
+            Vector3 direction = (player.transform.position - Body.transform.position).normalized;
+            direction.y = 0;
+            BodyRB.MovePosition(BodyRB.position + direction * (Speed * 2) * Time.fixedDeltaTime);
+        }
     }
     private void Rotate()
     {
