@@ -6401,7 +6401,7 @@ MonoBehaviour:
   JumpForce: 5
   HeightJumpForce: 10
   HeightJumpCD: 5
-  Health: 10
+  Health: 5
   body: {fileID: 1045775637}
 --- !u!1 &1782489768
 GameObject:
