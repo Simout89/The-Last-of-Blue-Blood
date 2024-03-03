@@ -45,6 +45,7 @@ public class Goblin : MonoBehaviour
     {
         if (Vector3.Distance(Body.transform.position, _point1) < 0.1)
         {
+            StartCoroutine(Rotate());
             yield return new WaitForSeconds(StayDelay);
             target = false;
         }
@@ -58,6 +59,7 @@ public class Goblin : MonoBehaviour
     {
         if (Vector3.Distance(Body.transform.position, _point2) < 0.1)
         {
+            StartCoroutine(Rotate());
             yield return new WaitForSeconds(StayDelay);
             target = true;
         }
@@ -73,5 +75,12 @@ public class Goblin : MonoBehaviour
             return true;
         else
             return false;
+    }
+    IEnumerator Rotate()
+    {
+        Vector3 rotate = Body.transform.eulerAngles;
+        rotate.y = 180;
+        transform.rotation = Quaternion.Euler(rotate);
+        yield return new WaitForSeconds(StayDelay);
     }
 }

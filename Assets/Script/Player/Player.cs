@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float HeightJumpCD = 1f;
     [SerializeField] private float Health = 3f;
     [SerializeField] private GameObject body; 
+
     private float _movespeedmultiplier = 1f;
     private CapsuleCollider _capsule;
     private bool _heightjumpcd = true;
