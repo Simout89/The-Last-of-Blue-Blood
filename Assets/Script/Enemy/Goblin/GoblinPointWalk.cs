@@ -28,35 +28,24 @@ public class GoblinPointWalk : MonoBehaviour
                 GoblinRotate.OnRotateRight.Invoke();
             _lasttarget = _target;
         }
+
         if (_target)
-            StartCoroutine(GotoPoint1());
+            StartCoroutine(GotoPoint(_goblininput.Point1, "Point1"));
         else
-            StartCoroutine(GotoPoint2());
+            StartCoroutine(GotoPoint(_goblininput.Point2, "Point2"));
     }
-    IEnumerator GotoPoint1()
+    IEnumerator GotoPoint(Vector3 Point, string PointName)
     {
-        if (Vector3.Distance(_goblininput.GoblinBody.transform.position, _goblininput.Point1) < 0.1)
+        if (Vector3.Distance(_goblininput.GoblinBody.transform.position, Point) < 0.1)
         {
             yield return new WaitForSeconds(StayDelay);
-            _target = false;
+            _target = PointName == "Point1" ? false : true;
         }
         else
         {
-            Vector3 direction = (_goblininput.Point1 - _goblininput.GoblinBody.transform.position).normalized;
+            Vector3 direction = (Point - _goblininput.GoblinBody.transform.position).normalized;
             _goblininput.GoblinRigidbody.MovePosition(_goblininput.GoblinRigidbody.position + direction * Speed * Time.fixedDeltaTime);
         }
-    }
-    IEnumerator GotoPoint2()
-    {
-        if (Vector3.Distance(_goblininput.GoblinBody.transform.position, _goblininput.Point2) < 0.1)
-        {
-            yield return new WaitForSeconds(StayDelay);
-            _target = true;
-        }
-        else
-        {
-            Vector3 direction = (_goblininput.Point2 - _goblininput.GoblinBody.transform.position).normalized;
-            _goblininput.GoblinRigidbody.MovePosition(_goblininput.GoblinRigidbody.position + direction * Speed * Time.fixedDeltaTime);
-        }
+
     }
 }

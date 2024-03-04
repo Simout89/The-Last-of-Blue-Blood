@@ -9,17 +9,20 @@ public class PlayerHeightJump : MonoBehaviour
     private Rigidbody _rb;
     private bool _isground = false;
     private bool _heightjumpdelay = true;
+    private bool _isjumpdelay = true;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
         PlayerInput.OnHeightJump.AddListener(HandleHeightJump);
         PlayerCheckGround.IsGround.AddListener(HandeIsGround);
+        PlayerJumpDelay.OnJumpDelayOutput.AddListener(HandleJumpDelayOutput);
     }
 
     private void HandleHeightJump()
     {
-        if (_isground && _heightjumpdelay)
+        if (_isground && _heightjumpdelay && _isjumpdelay)
         {
+            PlayerJumpDelay.OnJumpDelayInput.Invoke();
             StartCoroutine(heightjumpdelay());
             _rb.AddForce(Vector3.up * HeightJumpForce, ForceMode.VelocityChange);
         }
@@ -33,5 +36,9 @@ public class PlayerHeightJump : MonoBehaviour
         _heightjumpdelay = false;
         yield return new WaitForSeconds(HeightJumpDelay);
         _heightjumpdelay = true;
+    }
+    private void HandleJumpDelayOutput(bool flag)
+    {
+        _isjumpdelay = flag;
     }
 }
