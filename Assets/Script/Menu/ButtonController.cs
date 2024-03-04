@@ -10,6 +10,7 @@ public class ButtonController : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
+        Debug.Log("exit");
     }
     public void PlayButton()
     {
