@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private int _ammocount = 5;
     [SerializeField] private float _delay = 5;
     [SerializeField] private float _reloadtime = 5;
+    [SerializeField] private float _forcebullet = 10f;
     [SerializeField] private GameObject _bullet;
     [SerializeField] private Transform _muzzle;
     [SerializeField] private Transform _anchor;
@@ -19,8 +20,6 @@ public class Gun : MonoBehaviour
     private int _ammo;
     private bool _active = true;
     private bool _reload = false;
-    private bool _gunstuck = false;
-    private float _ypos = 1.568f;
 
     private void Start()
     {
@@ -32,12 +31,6 @@ public class Gun : MonoBehaviour
     {
         Fire();
     }
-    private void LateUpdate()
-    {
-        GunRests();
-    }
-
-
     private void Fire()
     {
         if (_active & Input.GetKeyDown(KeyCode.Mouse0) & !_reload)
@@ -48,7 +41,7 @@ public class Gun : MonoBehaviour
     {
         GameObject bullet = Instantiate(_bullet, _muzzle.position, Quaternion.identity);
         var direction = _muzzle.position - _anchor.position;
-        bullet.GetComponent<Rigidbody>().AddForce(direction * 10f, ForceMode.VelocityChange);
+        bullet.GetComponent<Rigidbody>().AddForce(direction * _forcebullet, ForceMode.VelocityChange);
     }
     IEnumerator Shot()
     {
@@ -76,36 +69,5 @@ public class Gun : MonoBehaviour
         _ammo = _ammocount;
         EventManager.Shot(_ammocount);
         _reload = false;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy"))
-        {
-            _gunstuck = true;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy"))
-        {
-            _gunstuck = false;
-        }
-    }
-
-    private void GunRests()
-    {
-        if ( _gunstuck )
-        {
-            var pos = transform.localPosition;
-            pos.y =0f;
-            transform.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 2f);
-        }
-        else
-        {
-            var pos = transform.localPosition;
-            pos.y = _ypos;
-            transform.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 1f);
-        }
     }
 }
