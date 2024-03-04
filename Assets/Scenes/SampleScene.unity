@@ -686,6 +686,7 @@ GameObject:
   - component: {fileID: 749981785}
   - component: {fileID: 749981784}
   - component: {fileID: 749981786}
+  - component: {fileID: 749981787}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Untagged
@@ -791,6 +792,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotateSpeed: 0.3
+--- !u!114 &749981787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749981778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543815335343b76418de7ec747c0499e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &800106488
 GameObject:
   m_ObjectHideFlags: 0
