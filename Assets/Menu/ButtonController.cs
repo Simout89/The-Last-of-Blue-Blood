@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class ButtonController : MonoBehaviour
+{
+    public static UnityEvent OnPlayButton = new UnityEvent();
+
+    public void ExitButton()
+    {
+        Application.Quit();
+    }
+    public void PlayButton()
+    {
+        OnPlayButton.Invoke();
+    }
+}

@@ -28,6 +28,7 @@ public class GoblinPointWalk : MonoBehaviour
                 GoblinRotate.OnRotateRight.Invoke();
             _lasttarget = _target;
         }
+
         if (_target)
             StartCoroutine(GotoPoint(_goblininput.Point1, "Point1"));
         else
@@ -38,10 +39,7 @@ public class GoblinPointWalk : MonoBehaviour
         if (Vector3.Distance(_goblininput.GoblinBody.transform.position, Point) < 0.1)
         {
             yield return new WaitForSeconds(StayDelay);
-            if("Point1" == PointName)
-                _target = false;
-            else
-                _target = true;
+            _target = PointName == "Point1" ? false : true;
         }
         else
         {
