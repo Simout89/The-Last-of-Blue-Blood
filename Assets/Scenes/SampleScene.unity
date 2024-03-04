@@ -6357,7 +6357,7 @@ CapsuleCollider:
   m_Radius: 0.5817754
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: -0.018060803, z: 0}
+  m_Center: {x: 0, y: -0.018060803, z: 1.1}
 --- !u!54 &1634860726
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6399,7 +6399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   JumpForce: 5
-  HeightJumpForce: 10
+  HeightJumpForce: 25
   HeightJumpCD: 5
   Health: 10
   body: {fileID: 1045775637}
