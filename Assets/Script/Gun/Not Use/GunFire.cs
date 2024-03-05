@@ -26,8 +26,6 @@ public class GunFire : MonoBehaviour
         GunSpawnBullet.OnSpawnBullet.Invoke();
         _ammo--;
         GunReload.OnCheckAmmo.Invoke();
-        EventManager.Shot(_ammo);
-
         _active = false;
         yield return new WaitForSeconds(Delay);
         _active = true;

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Gun : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private float _delay = 5;
     [SerializeField] private float _reloadtime = 5;
     [SerializeField] private float _forcebullet = 10f;
-    [SerializeField] private GameObject _bullet;
+    [SerializeField] private Rigidbody _bullet;
     [SerializeField] private Transform _muzzle;
     [SerializeField] private Transform _anchor;
     [SerializeField] private ParticleSystem _fire;
@@ -16,10 +17,13 @@ public class Gun : MonoBehaviour
     private bool _active = true;
     private bool _reload = false;
 
-    private void Start()
+    public static UnityEvent<int> OnFire = new UnityEvent<int>();
+
+
+    private void Awake()
     {
         _ammo = _ammocount;
-        EventManager.Shot(_ammo);
+        StartCoroutine(Delay());
     }
 
     private void Update()
@@ -34,9 +38,9 @@ public class Gun : MonoBehaviour
 
     private void SpawnBullet()
     {
-        GameObject bullet = Instantiate(_bullet, _muzzle.position, Quaternion.identity);
+        Rigidbody bullet = Instantiate(_bullet, _muzzle.position, Quaternion.identity);
         var direction = _muzzle.position - _anchor.position;
-        bullet.GetComponent<Rigidbody>().AddForce(direction * _forcebullet, ForceMode.VelocityChange);
+        bullet.AddForce(direction * _forcebullet, ForceMode.VelocityChange);
     }
     IEnumerator Shot()
     {
@@ -44,7 +48,7 @@ public class Gun : MonoBehaviour
         SpawnBullet();
         _ammo--;
         CheckAmmo();
-        EventManager.Shot(_ammo);
+        OnFire.Invoke(_ammo);
 
         _active = false;
         yield return new WaitForSeconds(_delay);
@@ -62,7 +66,12 @@ public class Gun : MonoBehaviour
         _reload = true;
         yield return new WaitForSeconds(_reloadtime);
         _ammo = _ammocount;
-        EventManager.Shot(_ammocount);
+        OnFire.Invoke(_ammocount);
         _reload = false;
+    }
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.01f);
+        OnFire.Invoke(_ammocount);
     }
 }
