@@ -44,7 +44,6 @@ public class GunAntiStuck : MonoBehaviour
         {
             var pos = transform.localPosition;
             pos.y = _ypos;
-            float distance = Vector3.Distance(transform.localPosition, pos);
             transform.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 2f);
         }
     }
