@@ -6,20 +6,28 @@ public class GunAntiStuck : MonoBehaviour
 {
     private bool _gunstuck = false;
     private float _ypos = 1.568f;
+    private void Start()
+    {
+        InvokeRepeating(nameof(GunRests),0f, 0.1f);
+    }
+    private void CheckGunStuck()
+    {
+
+    }
     private void Update()
     {
         GunRests();
     }
     private void OnTriggerEnter(Collider other)
     {
-        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy"))
+        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy") && (other.tag != "Princess"))
         {
             _gunstuck = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy"))
+        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy") && (other.tag != "Princess"))
         {
             _gunstuck = false;
         }
@@ -37,7 +45,7 @@ public class GunAntiStuck : MonoBehaviour
             var pos = transform.localPosition;
             pos.y = _ypos;
             float distance = Vector3.Distance(transform.localPosition, pos);
-            transform.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 1f * (distance / 2));
+            transform.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 2f);
         }
     }
 }
