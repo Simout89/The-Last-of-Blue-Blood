@@ -18,7 +18,7 @@ public class GoblinBerserk : MonoBehaviour
     {
         GoblinBerserkRotate.OnBerserkRotate.Invoke();
         Vector3 direction = (_goblininput.Player.transform.position - _goblininput.GoblinBody.transform.position).normalized;
-        direction.y = 0;
+        //direction.y = 0;
         _goblininput.GoblinRigidbody.MovePosition(_goblininput.GoblinRigidbody.position + direction * Speed * Time.fixedDeltaTime);
     }
 }
