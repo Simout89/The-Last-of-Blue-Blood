@@ -11,6 +11,7 @@ public class Finish : MonoBehaviour
         if (other.tag == "Player")
         {
             OnFinish.Invoke();
+            Destroy(gameObject);
         }
     }
 }

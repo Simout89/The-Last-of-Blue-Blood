@@ -11,7 +11,7 @@ public class PlayerCheckGround : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.1f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.3f))
             IsGround.Invoke(true);
         else
             IsGround.Invoke(false);

@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class GoblinAI : MonoBehaviour
 {
+    [SerializeField] private float PlayerDistanceDetection = 1f;
     private bool _playernear = false;
+    private GoblinInput _goblininput;
+
     private void Awake()
     {
+        _goblininput = GetComponent<GoblinInput>();
         GoblinPlayerDetection.OnPlayerNear.AddListener(HandlePlayerNear);
     }
     private void HandlePlayerNear(bool flag)
@@ -15,7 +19,7 @@ public class GoblinAI : MonoBehaviour
     }
     private void Update()
     {
-        if(_playernear)
+        if (Vector3.Distance(_goblininput.GoblinBody.transform.position, _goblininput.Player.transform.position) < PlayerDistanceDetection)
         {
             GoblinBerserk.OnBerserk.Invoke();
         }else
