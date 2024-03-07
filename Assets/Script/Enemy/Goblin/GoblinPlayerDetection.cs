@@ -9,7 +9,10 @@ public class GoblinPlayerDetection : MonoBehaviour
     [SerializeField] private float PlayerDistanceDetection = 1f;
     private GoblinInput _goblininput;
 
-    public static UnityEvent<bool> OnPlayerNear = new UnityEvent<bool>();
+    //public static UnityEvent<bool> OnPlayerNear = new UnityEvent<bool>();
+    public delegate void PlayerNear(bool value);
+    public static event PlayerNear OnPlayerNear;
+
 
     private void Awake()
     {
@@ -17,7 +20,7 @@ public class GoblinPlayerDetection : MonoBehaviour
     }
     private void Update()
     {
-        OnPlayerNear.Invoke(Vector3.Distance(_goblininput.GoblinBody.transform.position, _goblininput.Player.transform.position) < PlayerDistanceDetection);
+        OnPlayerNear?.Invoke(Vector3.Distance(_goblininput.GoblinBody.transform.position, _goblininput.Player.transform.position) < PlayerDistanceDetection);
     }
     //private bool _raycastcheck()
     //{
