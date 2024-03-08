@@ -19,14 +19,14 @@ public class PlayerSquat : MonoBehaviour
         if (flag)
         {
             _capsule.height = 1f;
-            body.transform.localScale = new Vector3(1f, 0.5f, 1f);
+            //body.transform.localScale = new Vector3(1f, 0.5f, 1f);
             Vector3 pos = transform.position;
             pos.y -= 0.409f;
             transform.position = pos;
         }else
         {
             _capsule.height = 2f;
-            body.transform.localScale = new Vector3(1f, 1f, 1f);
+            //body.transform.localScale = new Vector3(1f, 1f, 1f);
             Vector3 pos = transform.position;
             pos.y += 0.409f;
             transform.position = pos;
