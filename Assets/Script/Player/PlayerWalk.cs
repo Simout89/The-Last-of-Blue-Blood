@@ -19,7 +19,7 @@ public class PlayerWalk : MonoBehaviour
         if (flag)
             _movespeedmultiplier = 1;
         else
-            _movespeedmultiplier = 0.5f;
+            _movespeedmultiplier = 0.7f;
     }
     private void Awake()
     {
