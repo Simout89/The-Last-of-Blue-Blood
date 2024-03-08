@@ -91,7 +91,7 @@ public class Dragon : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(Mouth.position, direction, out hit, PlayerDistanceDetection))
         {
-            if (hit.collider.gameObject.tag == "Player")
+            if ((hit.collider.gameObject.tag == "Player") || (hit.collider.gameObject.tag == "Gun"))
                 return true;
             else
                 return false;
