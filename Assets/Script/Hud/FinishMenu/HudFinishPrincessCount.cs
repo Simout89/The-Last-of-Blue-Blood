@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class HudFinishPrincessCount : MonoBehaviour
+{
+    private TMP_Text text;
+    private GameObject[] princess;
+    public static UnityEvent<int> OnSetFinishPrincessCountText = new UnityEvent<int>();
+    private void Awake()
+    {
+        princess = GameObject.FindGameObjectsWithTag("Princess");
+        OnSetFinishPrincessCountText.AddListener(HandleSetFinishPrincessCountText);
+        text = GetComponent<TMP_Text>();
+    }
+    private void HandleSetFinishPrincessCountText(int time)
+    {
+        text.text = (time).ToString();
+    }
+}
