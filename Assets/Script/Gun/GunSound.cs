@@ -7,7 +7,6 @@ public class GunSound : MonoBehaviour
     [SerializeField] private AudioClip Fire;
     [SerializeField] private AudioClip Reload;
     private AudioSource audioSource;
-    private bool afterreload = false;
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
