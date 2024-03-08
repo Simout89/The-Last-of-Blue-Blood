@@ -16,4 +16,16 @@ public class ButtonController : MonoBehaviour
     {
         OnPlayButton.Invoke();
     }
+    public void FateButton()
+    {
+        Application.OpenURL("https://t.me/fatex6510");
+    }
+    public void FilippButton()
+    {
+        Application.OpenURL("https://t.me/filippgora");
+    }
+    public void LopataButton()
+    {
+        Application.OpenURL("https://t.me/lopata_i_hleb");
+    }
 }

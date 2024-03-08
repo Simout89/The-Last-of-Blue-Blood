@@ -51,7 +51,7 @@ public class PlayerAnimator : MonoBehaviour
 
     private void HandleJump()
     {
-        if(!_isheightjumpdelay)
+        if(_isheightjumpdelay)
         {
             _isjumping = true;
             ChangeAnimationState(JUMP);
