@@ -46,9 +46,11 @@ public class GoblinAI : MonoBehaviour
             else
                 ChangeAnimationState(ATTACK);
             BerserkRotate();
-            Vector3 direction = (Player.transform.position - GoblinBody.transform.position).normalized;
+            var goblinpos = GoblinBody.transform.position;
+            goblinpos.y += 1;
+            Vector3 direction = (Player.transform.position - goblinpos).normalized;
             //direction.y = 0;
-            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * (Speed * 4f) * Time.fixedDeltaTime);
+            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * (Speed * 3f) * Time.fixedDeltaTime);
         }
         else
         {
