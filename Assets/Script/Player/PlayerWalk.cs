@@ -56,11 +56,11 @@ public class PlayerWalk : MonoBehaviour
     }
     private void RotateLeft()
     {
-        StartCoroutine(Rotate(-90f));
+        StartCoroutine(Rotate(-100f));
     }
     private void RotateRight()
     {
-        StartCoroutine(Rotate(90f));
+        StartCoroutine(Rotate(100f));
     }
     private IEnumerator Rotate(float angel)
     {

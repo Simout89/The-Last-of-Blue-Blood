@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunAntiStuck : MonoBehaviour
 {
     private bool _gunstuck = false;
-    private float _ypos = 1.568f;
+    private float _ypos = 0.88f;
     private void Start()
     {
         InvokeRepeating(nameof(GunRests),0f, 0.1f);
