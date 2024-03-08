@@ -18,7 +18,8 @@ public class Gun : MonoBehaviour
     private bool _reload = false;
 
     public static UnityEvent<int> OnFire = new UnityEvent<int>();
-
+    public static UnityEvent OnFireSound = new UnityEvent();
+    public static UnityEvent OnReloadSound = new UnityEvent();
 
     private void Awake()
     {
@@ -33,7 +34,10 @@ public class Gun : MonoBehaviour
     private void Fire()
     {
         if (_active & Input.GetKeyDown(KeyCode.Mouse0) & !_reload)
+        {
             StartCoroutine(Shot());
+            OnFireSound.Invoke();
+        }
     }
 
     private void SpawnBullet()
@@ -63,6 +67,7 @@ public class Gun : MonoBehaviour
 
     IEnumerator Reload()
     {
+        OnReloadSound.Invoke();
         _reload = true;
         yield return new WaitForSeconds(_reloadtime);
         _ammo = _ammocount;
