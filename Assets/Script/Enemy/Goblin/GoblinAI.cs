@@ -1,26 +1,114 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+using static UnityEngine.GraphicsBuffer;
 
 public class GoblinAI : MonoBehaviour
 {
-    private bool _playernear = false;
+    private bool _rotate = true; // false - left , true - right
+    private bool _newrotate = false;
+    private bool _target = true;
+    private bool _lasttarget = true;
+    [SerializeField] private float PlayerDistanceDetection = 1f;
+    private Vector3 Point1;
+    private Vector3 Point2;
+    [SerializeField] private float RotateSpeed = 1f;
+    [SerializeField] private float Speed = 1f;
+    [SerializeField] private float StayDelay = 1f;
+    [SerializeField] public Transform Point;
+    [SerializeField] public GameObject GoblinBody;
+    [SerializeField] public Rigidbody GoblinRigidbody;
+    [SerializeField] public GameObject Player;
     private void Awake()
     {
-        GoblinPlayerDetection.OnPlayerNear.AddListener(HandlePlayerNear);
-    }
-    private void HandlePlayerNear(bool flag)
-    {
-        _playernear = flag;
+        Point1 = Point.position;
+        Point2 = GoblinBody.transform.position;
     }
     private void Update()
     {
-        if(_playernear)
+        if (Vector3.Distance(GoblinBody.transform.position, Player.transform.position) < PlayerDistanceDetection)
         {
-            GoblinBerserk.OnBerserk.Invoke();
-        }else
-        {
-            GoblinPointWalk.OnPointWalk.Invoke();
+            BerserkRotate();
+            Vector3 direction = (Player.transform.position - GoblinBody.transform.position).normalized;
+            //direction.y = 0;
+            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * Speed * Time.fixedDeltaTime);
         }
+        else
+        {
+            PointWalk();
+        }
+    }
+    private void BerserkRotate()
+    {
+        if (GoblinBody.transform.position.x - Player.transform.position.x < 0f)
+        {
+            _newrotate = true;
+            if (_rotate != _newrotate)
+            {
+                _rotate = _newrotate;
+                RotateRight();
+            }
+        }
+        else
+        {
+            _newrotate = false;
+            if (_rotate != _newrotate)
+            {
+                _rotate = _newrotate;
+                RotateLeft();
+            }
+        }
+    }
+    private void RotateLeft()
+    {
+        StartCoroutine(Rotate(0f));
+    }
+    private void RotateRight()
+    {
+        StartCoroutine(Rotate(180f));
+    }
+    private IEnumerator Rotate(float angel)
+    {
+        Quaternion startRotation = GoblinBody.transform.localRotation;
+        Quaternion endRotation = Quaternion.Euler(0, angel, 0);
+        float elapsedTime = 0.0f;
+        while (elapsedTime < RotateSpeed)
+        {
+            GoblinBody.transform.localRotation = Quaternion.Slerp(startRotation, endRotation, (elapsedTime / RotateSpeed));
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        GoblinBody.transform.localRotation = endRotation;
+    }
+    private void PointWalk()
+    {
+        if (_lasttarget != _target)
+        {
+            if (_lasttarget)
+                GoblinRotate.OnRotateLeft.Invoke();
+            else
+                GoblinRotate.OnRotateRight.Invoke();
+            _lasttarget = _target;
+        }
+
+        if (_target)
+            StartCoroutine(GotoPoint(Point1, "Point1"));
+        else
+            StartCoroutine(GotoPoint(Point2, "Point2"));
+    }
+    IEnumerator GotoPoint(Vector3 Point, string PointName)
+    {
+        if (Vector3.Distance(GoblinBody.transform.position, Point) < 0.1)
+        {
+            yield return new WaitForSeconds(StayDelay);
+            _target = PointName == "Point1" ? false : true;
+        }
+        else
+        {
+            Vector3 direction = (Point - GoblinBody.transform.position).normalized;
+            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * Speed * Time.fixedDeltaTime);
+        }
+
     }
 }
