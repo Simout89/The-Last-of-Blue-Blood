@@ -2792,13 +2792,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerDistanceDetection: 8
   RotateSpeed: 0.3
-  Speed: 0.3
+  Speed: 3
   StayDelay: 2
   Point: {fileID: 484080122}
   GoblinBody: {fileID: 5175403409035947757}
   GoblinRigidbody: {fileID: 8675692588218331383}
   Player: {fileID: 1634860722}
   _animator: {fileID: 8675692588218331381}
+  BodyPoint: {fileID: 3470511715529352393}
 --- !u!1 &769139653 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: bcd4b80fa83bc2247ac1453fcbd12880, type: 3}
@@ -10709,9 +10710,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.28948784
-  m_Height: 2.1657598
+  m_Height: 2
   m_Direction: 1
-  m_Center: {x: -0.009683609, y: 0.27954614, z: 0}
+  m_Center: {x: -0.009683609, y: 0.20514846, z: 0}
 --- !u!54 &1634860726
 Rigidbody:
   m_ObjectHideFlags: 0

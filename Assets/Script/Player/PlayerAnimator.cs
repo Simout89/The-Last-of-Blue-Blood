@@ -78,7 +78,6 @@ public class PlayerAnimator : MonoBehaviour
         if(currentState == newState) return;
         _animator.Play(newState);
         currentState = newState;
-        Debug.Log(newState);
     }
     private void HandleSquat(bool flag)
     {

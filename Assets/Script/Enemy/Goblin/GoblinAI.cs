@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,7 @@ public class GoblinAI : MonoBehaviour
     [SerializeField] public Rigidbody GoblinRigidbody;
     [SerializeField] public GameObject Player;
     [SerializeField] private Animator _animator;
+    [SerializeField] private Transform BodyPoint;
     private GoblinBody goblinbody;
     const string IDLE = "Armature|idle";
     const string WALK = "Armature|Patrolling";
@@ -46,11 +48,9 @@ public class GoblinAI : MonoBehaviour
             else
                 ChangeAnimationState(ATTACK);
             BerserkRotate();
-            var goblinpos = GoblinBody.transform.position;
-            goblinpos.y += 1;
-            Vector3 direction = (Player.transform.position - goblinpos).normalized;
+            Vector3 direction = (Player.transform.position - BodyPoint.position).normalized;
             //direction.y = 0;
-            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * (Speed * 3f) * Time.fixedDeltaTime);
+            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * (Speed * 2.5f) * Time.deltaTime);
         }
         else
         {
@@ -128,7 +128,7 @@ public class GoblinAI : MonoBehaviour
         {
             ChangeAnimationState(WALK);
             Vector3 direction = (Point - GoblinBody.transform.position).normalized;
-            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * Speed * Time.fixedDeltaTime);
+            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * Speed * Time.deltaTime);
         }
 
     }
@@ -137,6 +137,5 @@ public class GoblinAI : MonoBehaviour
         if (currentState == newState) return;
         _animator.Play(newState);
         currentState = newState;
-        Debug.Log(newState);
     }
 }
