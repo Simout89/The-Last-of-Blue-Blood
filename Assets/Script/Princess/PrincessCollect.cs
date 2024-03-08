@@ -6,13 +6,33 @@ using UnityEngine.Events;
 public class PrincessCollect : MonoBehaviour
 {
     public static UnityEvent OnCollectPrincess = new UnityEvent();
-
+    private Animator animator;
+    private AudioSource audioSource;
+    private string currentState;
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            OnCollectPrincess.Invoke();
-            Destroy(gameObject);
+            StartCoroutine(delay());
         }
+    }
+    private IEnumerator delay()
+    {
+        audioSource.Play(); 
+        ChangeAnimationState("Armature|joy");
+        OnCollectPrincess.Invoke();
+        yield return new WaitForSeconds(3f);
+        Destroy(gameObject);
+    }
+    private void ChangeAnimationState(string newState)
+    {
+        if (currentState == newState) return;
+        animator.Play(newState);
+        currentState = newState;
     }
 }
