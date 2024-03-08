@@ -7,7 +7,8 @@ public class GoblinBody : MonoBehaviour
     [SerializeField] private int Health = 5;
     [SerializeField] private GameObject Goblin;
     private bool _playercontact = false;
-    private bool _damagedelay = true;
+    public bool getdamage = false;
+    public bool _damagedelay = true;
     private void FixedUpdate()
     {
         DamagePlayer();
@@ -46,6 +47,7 @@ public class GoblinBody : MonoBehaviour
         {
             Health--;
             CheckHealt();
+            getdamage = true;
         }
     }
     private void CheckHealt()

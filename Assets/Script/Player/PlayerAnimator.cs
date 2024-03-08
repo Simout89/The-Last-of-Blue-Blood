@@ -14,7 +14,7 @@ public class PlayerAnimator : MonoBehaviour
     private bool _isjumping = false;
     private bool _isheightjumpdelay = false;
     const string IDLE = "Armature|Idle";
-    const string SQUAD = "Armature|Sit Down";
+    const string SQUAD = "Squad";
     const string SQUAD_RUN = "Armature|Sit Down_Run";
     const string RUN = "Armature|Run";
     const string ATTACK = "Armature|Attack";

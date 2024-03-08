@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class PlayerHealth : MonoBehaviour
     private void CheckHealth()
     {
         if (Health <= 0)
-            Debug.Log("Die");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     private IEnumerator Delay()
     {

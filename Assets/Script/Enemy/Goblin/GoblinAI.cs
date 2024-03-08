@@ -10,6 +10,8 @@ public class GoblinAI : MonoBehaviour
     private bool _newrotate = false;
     private bool _target = true;
     private bool _lasttarget = true;
+    private string currentState;
+
     [SerializeField] private float PlayerDistanceDetection = 1f;
     private Vector3 Point1;
     private Vector3 Point2;
@@ -20,23 +22,37 @@ public class GoblinAI : MonoBehaviour
     [SerializeField] public GameObject GoblinBody;
     [SerializeField] public Rigidbody GoblinRigidbody;
     [SerializeField] public GameObject Player;
+    [SerializeField] private Animator _animator;
+    private GoblinBody goblinbody;
+    const string IDLE = "Armature|idle";
+    const string WALK = "Armature|Patrolling";
+    const string BERSERK = "Armature|Fury mode";
+    const string ATTACK = "Armature|Attack ";
+    private bool infattack = false;
     private void Awake()
     {
         Point1 = Point.position;
         Point2 = GoblinBody.transform.position;
+        goblinbody = GetComponentInChildren<GoblinBody>();
+
     }
     private void Update()
     {
-        if (Vector3.Distance(GoblinBody.transform.position, Player.transform.position) < PlayerDistanceDetection)
+        if ((Vector3.Distance(GoblinBody.transform.position, Player.transform.position) < PlayerDistanceDetection) || infattack || goblinbody.getdamage)
         {
+            infattack = true;
+            if (goblinbody._damagedelay)
+                ChangeAnimationState(BERSERK);
+            else
+                ChangeAnimationState(ATTACK);
             BerserkRotate();
             Vector3 direction = (Player.transform.position - GoblinBody.transform.position).normalized;
             //direction.y = 0;
-            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * (Speed * 1.5f) * Time.fixedDeltaTime);
+            GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * (Speed * 4f) * Time.fixedDeltaTime);
         }
         else
         {
-            PointWalk();
+            PointWalk();        
         }
     }
     private void BerserkRotate()
@@ -62,11 +78,11 @@ public class GoblinAI : MonoBehaviour
     }
     private void RotateLeft()
     {
-        StartCoroutine(Rotate(0f));
+        StartCoroutine(Rotate(90f));
     }
     private void RotateRight()
     {
-        StartCoroutine(Rotate(180f));
+        StartCoroutine(Rotate(-90));
     }
     private IEnumerator Rotate(float angel)
     {
@@ -86,9 +102,9 @@ public class GoblinAI : MonoBehaviour
         if (_lasttarget != _target)
         {
             if (_lasttarget)
-                GoblinRotate.OnRotateLeft.Invoke();
+                RotateLeft();
             else
-                GoblinRotate.OnRotateRight.Invoke();
+                RotateRight();
             _lasttarget = _target;
         }
 
@@ -99,16 +115,26 @@ public class GoblinAI : MonoBehaviour
     }
     IEnumerator GotoPoint(Vector3 Point, string PointName)
     {
-        if (Vector3.Distance(GoblinBody.transform.position, Point) < 0.1)
+        if (Vector3.Distance(GoblinBody.transform.position, Point) < 0.2)
         {
+            ChangeAnimationState(IDLE);
             yield return new WaitForSeconds(StayDelay);
             _target = PointName == "Point1" ? false : true;
+
         }
         else
         {
+            ChangeAnimationState(WALK);
             Vector3 direction = (Point - GoblinBody.transform.position).normalized;
             GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * Speed * Time.fixedDeltaTime);
         }
 
+    }
+    private void ChangeAnimationState(string newState)
+    {
+        if (currentState == newState) return;
+        _animator.Play(newState);
+        currentState = newState;
+        Debug.Log(newState);
     }
 }
