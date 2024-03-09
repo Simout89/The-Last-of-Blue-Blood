@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 57b9c4fe04c0ba044881cc1f77fe3e1b, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -175,6 +175,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tabls  and Chars and Banches-1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -249,6 +257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor-3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eacf9f51c6f73b74382ae1ba61ac5f8b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -318,6 +330,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
       propertyPath: m_Name
       value: Tabls  and Chars and Banches-1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -420,6 +440,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 910ea9aa211d7b84eb4ebf358c9b33c1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 910ea9aa211d7b84eb4ebf358c9b33c1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -481,6 +509,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 96118018183969810, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
     m_RemovedGameObjects: []
@@ -506,7 +542,7 @@ GameObject:
   - component: {fileID: 113546690}
   m_Layer: 0
   m_Name: default (2)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -612,7 +648,7 @@ GameObject:
   - component: {fileID: 152472096}
   m_Layer: 0
   m_Name: default (1)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -768,6 +804,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door and stairs-1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f0ab478b1e5acb84bb795021f20b261d, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f0ab478b1e5acb84bb795021f20b261d, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -861,6 +905,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -928,6 +980,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -947,7 +1007,7 @@ GameObject:
   - component: {fileID: 201367693}
   m_Layer: 0
   m_Name: default (5)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1091,6 +1151,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1161,6 +1229,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
       propertyPath: m_Name
       value: Tabls  and Chars and Banches-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1254,6 +1330,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1328,6 +1412,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windows-1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b08f384be131f3647bc5ed778118b581, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b08f384be131f3647bc5ed778118b581, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1394,6 +1486,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1497,6 +1597,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1521,7 +1629,7 @@ GameObject:
   - component: {fileID: 287541843}
   m_Layer: 0
   m_Name: default (7)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1665,6 +1773,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1721,6 +1837,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1858,6 +1982,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oven
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ecca60c0eb1f5745a7e7c6a67e23af0, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6ecca60c0eb1f5745a7e7c6a67e23af0, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1919,6 +2051,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1985,6 +2125,14 @@ PrefabInstance:
     - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
       propertyPath: m_Name
       value: Wooden stand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2060,6 +2208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door and stairs-1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f0ab478b1e5acb84bb795021f20b261d, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: f0ab478b1e5acb84bb795021f20b261d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.49
@@ -2099,6 +2251,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: f0ab478b1e5acb84bb795021f20b261d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 22.707993
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f0ab478b1e5acb84bb795021f20b261d, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2207,6 +2363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2c708f71d76db75449f8c90974fb8e76, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2298,6 +2458,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2369,6 +2537,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2438,6 +2614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -2449,6 +2629,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2564,6 +2748,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windows-1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b08f384be131f3647bc5ed778118b581, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b08f384be131f3647bc5ed778118b581, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2643,6 +2835,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof-4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5dbc285ab1259b42b8149e5299bcebc, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b5dbc285ab1259b42b8149e5299bcebc, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2709,7 +2909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.36
+      value: 4.256
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2816,6 +3016,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tabls  and Chars and Banches-2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 499a5cac98ca3504c8b4765cfd7004fc, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 499a5cac98ca3504c8b4765cfd7004fc, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2889,6 +3097,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2964,6 +3180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room witch the stairs-2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00daea37af77dfc4baf71a74dab4e08c, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3023,6 +3243,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3113,6 +3341,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3182,6 +3418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -3193,6 +3433,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3286,6 +3530,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3360,6 +3612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -3371,6 +3627,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3476,6 +3736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -3487,6 +3751,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3592,6 +3860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof-4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5dbc285ab1259b42b8149e5299bcebc, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: b5dbc285ab1259b42b8149e5299bcebc, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.363
@@ -3599,6 +3871,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: b5dbc285ab1259b42b8149e5299bcebc, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.2904
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b5dbc285ab1259b42b8149e5299bcebc, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3704,6 +3980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2c708f71d76db75449f8c90974fb8e76, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3799,6 +4079,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3893,6 +4181,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3967,6 +4263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -3978,6 +4278,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4079,6 +4383,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4148,6 +4460,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windows-0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8404e91a4d126ff4a994bd07f4127583, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8404e91a4d126ff4a994bd07f4127583, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4166,9 +4486,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1048068246}
     m_Modifications:
+    - target: {fileID: 264648314552006878, guid: 44263f4f6b0fdd04eb7e4078bea6e0c5, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447447290895572054, guid: 44263f4f6b0fdd04eb7e4078bea6e0c5, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 2260117657776735980, guid: 44263f4f6b0fdd04eb7e4078bea6e0c5, type: 3}
       propertyPath: m_LocalPosition.y
       value: 11.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512609876692477571, guid: 44263f4f6b0fdd04eb7e4078bea6e0c5, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 7138657668979190452, guid: 44263f4f6b0fdd04eb7e4078bea6e0c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4213,6 +4545,10 @@ PrefabInstance:
     - target: {fileID: 9163571063110993181, guid: 44263f4f6b0fdd04eb7e4078bea6e0c5, type: 3}
       propertyPath: m_Name
       value: Bad
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163571063110993181, guid: 44263f4f6b0fdd04eb7e4078bea6e0c5, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4284,6 +4620,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4359,6 +4703,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 910ea9aa211d7b84eb4ebf358c9b33c1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 910ea9aa211d7b84eb4ebf358c9b33c1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4415,6 +4767,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4481,6 +4841,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
       propertyPath: m_Name
       value: Book (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4561,6 +4929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room witch the stairs-2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00daea37af77dfc4baf71a74dab4e08c, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4620,6 +4992,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4683,6 +5063,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4707,7 +5095,7 @@ GameObject:
   - component: {fileID: 652147889}
   m_Layer: 0
   m_Name: default (8)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4863,6 +5251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -4874,6 +5266,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4915,6 +5311,124 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+--- !u!1 &694369489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694369490}
+  - component: {fileID: 694369494}
+  - component: {fileID: 694369493}
+  - component: {fileID: 694369492}
+  - component: {fileID: 694369491}
+  m_Layer: 0
+  m_Name: default
+  m_TagString: Map
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &694369490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694369489}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: 134.14314, y: -1.3975133, z: 0.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1048068246}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &694369491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694369489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09fde95ba86c89346843f85245c5e5fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &694369492
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694369489}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4, y: 2.9, z: 0.3}
+  m_Center: {x: 0, y: 1.45, z: -0.05}
+--- !u!23 &694369493
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694369489}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2b1d5b0b247cc974c946b0c3b77876ea, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &694369494
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694369489}
+  m_Mesh: {fileID: -2432090755550338912, guid: 73bc6d540f6aeb54180f469940c84299, type: 3}
 --- !u!4 &699130099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 30910d4816dc60a429c5c2f817740256, type: 3}
@@ -4971,6 +5485,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5039,6 +5561,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5095,6 +5625,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 04d76b78b20548144882dbf535399ec6, type: 3}
       propertyPath: m_Name
       value: Shield and flag-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 04d76b78b20548144882dbf535399ec6, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 04d76b78b20548144882dbf535399ec6, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5190,6 +5728,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5257,6 +5803,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5318,6 +5872,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5393,6 +5955,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 910ea9aa211d7b84eb4ebf358c9b33c1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 910ea9aa211d7b84eb4ebf358c9b33c1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5461,6 +6031,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 52b8935fda72b304497718cb20d1cd00, type: 3}
       propertyPath: m_Name
       value: basement 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52b8935fda72b304497718cb20d1cd00, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52b8935fda72b304497718cb20d1cd00, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5539,6 +6117,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windows-1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b08f384be131f3647bc5ed778118b581, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b08f384be131f3647bc5ed778118b581, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5605,6 +6191,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5667,6 +6261,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5728,6 +6330,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5795,6 +6405,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5856,6 +6474,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5924,6 +6550,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5985,6 +6619,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6060,6 +6702,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bar decor-2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f6358e1478bfe54686b5c042230ad99, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 4f6358e1478bfe54686b5c042230ad99, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6117,6 +6767,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tabls  and Chars and Banches-1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6173,6 +6831,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
       propertyPath: m_Name
       value: Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6234,6 +6900,14 @@ PrefabInstance:
     - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
       propertyPath: m_Name
       value: Wooden stand (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6341,6 +7015,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tabls  and Chars and Banches-3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ebebbd358f71cb47a8980729d745c8c, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6ebebbd358f71cb47a8980729d745c8c, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6406,7 +7088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6493,6 +7175,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6567,6 +7257,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: castle stan (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe98d9d6626bfc741abd2fa840562433, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fe98d9d6626bfc741abd2fa840562433, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6636,6 +7334,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windows-1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b08f384be131f3647bc5ed778118b581, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b08f384be131f3647bc5ed778118b581, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6698,6 +7404,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6759,6 +7473,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6826,6 +7548,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6933,6 +7663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -6944,6 +7678,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7054,6 +7792,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windows-0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8404e91a4d126ff4a994bd07f4127583, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8404e91a4d126ff4a994bd07f4127583, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7075,7 +7821,7 @@ GameObject:
   - component: {fileID: 1048068246}
   m_Layer: 0
   m_Name: Locathion
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7115,6 +7861,8 @@ Transform:
   - {fileID: 1195308351}
   - {fileID: 1361442515}
   - {fileID: 1079127317}
+  - {fileID: 694369490}
+  - {fileID: 1550565004}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1052488363
@@ -7226,6 +7974,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7294,6 +8050,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ab0a60089ef8ff94b8af0b980d304c8e, type: 3}
       propertyPath: m_Name
       value: Stairs-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab0a60089ef8ff94b8af0b980d304c8e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: ab0a60089ef8ff94b8af0b980d304c8e, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7394,6 +8158,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof-4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5dbc285ab1259b42b8149e5299bcebc, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b5dbc285ab1259b42b8149e5299bcebc, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7453,6 +8225,14 @@ PrefabInstance:
     - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
       propertyPath: m_Name
       value: Wooden stand (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7515,6 +8295,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7595,6 +8383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs-2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab0a60089ef8ff94b8af0b980d304c8e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ab0a60089ef8ff94b8af0b980d304c8e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1856
@@ -7618,6 +8410,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: ab0a60089ef8ff94b8af0b980d304c8e, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.089
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: ab0a60089ef8ff94b8af0b980d304c8e, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7723,6 +8519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone-1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d5c90af99e693b4e8422d5008fcaea3, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 3d5c90af99e693b4e8422d5008fcaea3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04
@@ -7762,6 +8562,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 3d5c90af99e693b4e8422d5008fcaea3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.466
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 3d5c90af99e693b4e8422d5008fcaea3, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7855,6 +8659,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shield and flag-0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2887700025a00354c9593f7b14ab3412, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2887700025a00354c9593f7b14ab3412, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7924,6 +8736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -7935,6 +8751,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8028,6 +8848,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8047,7 +8875,7 @@ GameObject:
   - component: {fileID: 1147086184}
   m_Layer: 0
   m_Name: default (6)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8196,6 +9024,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8261,6 +9097,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
       propertyPath: m_Name
       value: Book (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8348,6 +9192,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8382,7 +9234,7 @@ GameObject:
   - component: {fileID: 1239833882}
   m_Layer: 0
   m_Name: default (1)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8538,6 +9390,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Royal glass (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 30910d4816dc60a429c5c2f817740256, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 30910d4816dc60a429c5c2f817740256, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8607,6 +9467,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8673,6 +9541,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8735,6 +9611,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bads-1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 577efd9ba50ec634b8e8e9caec7955f1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 577efd9ba50ec634b8e8e9caec7955f1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8791,7 +9675,7 @@ GameObject:
   - component: {fileID: 1279953631}
   m_Layer: 0
   m_Name: 1 locathion
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9008,6 +9892,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden stand (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9070,6 +9962,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9131,6 +10031,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9201,6 +10109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -9212,6 +10124,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9305,6 +10221,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tabls  and Chars and Banches-1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0e50cc33c4ed99d408672e72052034c4, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9361,6 +10285,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9436,6 +10368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: basement 0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52b8935fda72b304497718cb20d1cd00, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 52b8935fda72b304497718cb20d1cd00, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.0988
@@ -9443,6 +10379,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 52b8935fda72b304497718cb20d1cd00, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.0889
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52b8935fda72b304497718cb20d1cd00, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9546,6 +10486,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9613,6 +10561,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9678,6 +10634,14 @@ PrefabInstance:
     - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
       propertyPath: m_Name
       value: Wooden stand (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 96118018183969810, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
@@ -9758,6 +10722,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 499a5cac98ca3504c8b4765cfd7004fc, type: 3}
       propertyPath: m_Name
       value: Tabls  and Chars and Banches-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 499a5cac98ca3504c8b4765cfd7004fc, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 499a5cac98ca3504c8b4765cfd7004fc, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9843,6 +10815,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountauint
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44d91df6cc5695347a5566da1d12795e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 44d91df6cc5695347a5566da1d12795e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9899,6 +10879,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9966,6 +10954,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10036,6 +11032,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: castle stan
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe98d9d6626bfc741abd2fa840562433, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fe98d9d6626bfc741abd2fa840562433, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10104,6 +11108,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2c708f71d76db75449f8c90974fb8e76, type: 3}
       propertyPath: m_Name
       value: Road and grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2c708f71d76db75449f8c90974fb8e76, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10204,6 +11212,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10265,6 +11281,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10408,6 +11432,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10478,6 +11510,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ograda (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c44a5b87e77c1344cbb086fb0553eb26, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c44a5b87e77c1344cbb086fb0553eb26, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10518,7 +11558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10609,6 +11649,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mug and bottles-2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02c7fa383b7f62447bc2453e43903dc3, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 02c7fa383b7f62447bc2453e43903dc3, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10678,6 +11726,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bar decor-2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f6358e1478bfe54686b5c042230ad99, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 4f6358e1478bfe54686b5c042230ad99, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10743,6 +11799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-0 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
       propertyPath: m_LocalScale.z
       value: 5.3169
@@ -10758,6 +11818,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
       propertyPath: m_LocalPosition.z
       value: 5.4393
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10828,6 +11892,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door and stairs-0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34b597ec252fb224cb12c559e0cb5af0, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 34b597ec252fb224cb12c559e0cb5af0, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10837,6 +11909,80 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34b597ec252fb224cb12c559e0cb5af0, type: 3}
   m_PrefabInstance: {fileID: 1547628153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1550565003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1048068246}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 134.32315
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05248651
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.70776
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70706093
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -269.99298
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_Name
+      value: Door and Door_frame-0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+--- !u!4 &1550565004 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 06e0969124f40f94088096e0460a5ae1, type: 3}
+  m_PrefabInstance: {fileID: 1550565003}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1589171496
 PrefabInstance:
@@ -10889,6 +12035,14 @@ PrefabInstance:
     - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
       propertyPath: m_Name
       value: Wooden stand (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10963,6 +12117,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fb9edf87e4e28cc4494507b700bed4e9, type: 3}
       propertyPath: m_Name
       value: Room with balcony-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb9edf87e4e28cc4494507b700bed4e9, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fb9edf87e4e28cc4494507b700bed4e9, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11068,6 +12230,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11138,6 +12308,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11194,6 +12372,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11257,6 +12443,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11318,6 +12512,14 @@ PrefabInstance:
     - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
       propertyPath: m_Name
       value: Wooden stand (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11392,6 +12594,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 66c043c88e1d2934e80b0123ce3f4a8d, type: 3}
       propertyPath: m_Name
       value: Roof-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 66c043c88e1d2934e80b0123ce3f4a8d, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 66c043c88e1d2934e80b0123ce3f4a8d, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11500,6 +12710,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bar decor-2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f6358e1478bfe54686b5c042230ad99, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 4f6358e1478bfe54686b5c042230ad99, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11556,6 +12774,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11619,6 +12845,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11681,6 +12915,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11705,7 +12947,7 @@ GameObject:
   - component: {fileID: 1695521939}
   m_Layer: 0
   m_Name: default (4)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11918,6 +13160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -11929,6 +13175,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12027,6 +13277,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12093,6 +13351,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12149,6 +13415,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12215,6 +13489,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
       propertyPath: m_Name
       value: Book (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2aa004dbcaa86a54387f8065bf7a274b, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12284,6 +13566,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b6c50e99eaebc294f882378434ed6cec, type: 3}
       propertyPath: m_Name
       value: Room witch the stairs-0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b6c50e99eaebc294f882378434ed6cec, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12357,6 +13643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -12368,6 +13658,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12460,6 +13754,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: dd2b732211fd8cc429474374e69cd661, type: 3}
       propertyPath: m_Name
       value: Bads-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd2b732211fd8cc429474374e69cd661, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: dd2b732211fd8cc429474374e69cd661, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12564,6 +13866,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 30910d4816dc60a429c5c2f817740256, type: 3}
       propertyPath: m_Name
       value: Royal glass (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 30910d4816dc60a429c5c2f817740256, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 30910d4816dc60a429c5c2f817740256, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12691,6 +14001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor-2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c036f66b21057994cab7fcd29ea2a5cd, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12739,6 +14053,74 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1279953631}
     m_Modifications:
+    - target: {fileID: 16361520879753339, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 22038793281354112, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 129277162839411487, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 129732822465851117, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 230227881395125393, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 532835422707218193, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 551616216360309484, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 614561775224015398, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 688995283868215117, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 742008658395817639, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 746242765764396149, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 763486327351640972, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 798022187700463074, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 865704607092955403, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 891942828404604097, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 906756332700168323, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 932803331926522525, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 995732272467229378, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -12747,9 +14129,429 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.026
       objectReference: {fileID: 0}
+    - target: {fileID: 1074787630483263776, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081094351033525961, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236601784642881098, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262601977626381049, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1381105910258025468, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563454846150244977, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598469564615528771, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1676809143523343108, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677087234867097146, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790229438354928233, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800657191811945984, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816350061048436503, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825900384946734378, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873063303593082632, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924373006919199116, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2020969443750304991, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126265862241370295, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2313807606884008754, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339235224604453280, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488578405686337139, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630409088629107911, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654439798744105209, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2664339671408235592, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800334121761710720, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2808113027768264325, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874871648638723945, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885607018546986927, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936510269264978393, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988407694163679120, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212975251946977093, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312908829910683019, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404878174471054688, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447238971939371390, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448061099209611734, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3478330105440942888, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528047575019526291, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530590172539682815, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530704645294175881, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553524241183760497, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674831302196135871, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3808005517985024325, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820308831362561738, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 3823268506896530658, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
       propertyPath: m_Name
       value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823268506896530658, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923538343063155581, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964969856096539109, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033304916597673176, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047506719367723613, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065022546851555239, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4092250582172375454, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095099481824536235, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173997856574261120, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217063064779612391, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329854802384503817, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362889194258438521, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404305955223739489, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4447478405887186616, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500218721416086295, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504289262843914818, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509792474087452268, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4518824775426290754, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546005494802401691, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605136371281957748, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626698662830091873, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653053005314974904, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684257612739994016, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727504041448750288, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784354154348637101, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799548614362313026, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832284163254620827, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835682634121418421, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844708615655247003, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899413871400516558, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927165659025686361, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992050904571470151, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997162324284071538, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5018815429691835012, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036176226065653630, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119413429747619902, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226916943910686227, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5284142070852415900, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5365166577308627969, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371577144007158076, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5476094252838816676, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5538702517256067240, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5580627115653975632, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5580776798416078630, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583319444321787978, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604810193947444209, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615135071264971975, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724730955562778470, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797288201751606610, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844278237546991516, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932422329372516623, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934273664352993703, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966501259647163833, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6121868635008462665, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146673968308820224, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162744717436946294, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6416746292265948190, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438947962905049120, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445892625087573137, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502773366715511236, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514548567503314864, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580043744507091545, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590349603070369372, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 6721549718755958445, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12791,6 +14593,150 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6742311001456671723, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6772122923948986745, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846877982565803690, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921971505606473838, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027347012832240646, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7238338787445524433, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257888493885353934, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267452286486232563, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301997251968420528, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309610255704878809, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312319169986794844, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438104823471771989, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511804094966039208, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694667043256566749, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695523750455482083, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784579911670510112, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828524049258233491, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973455337027812133, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106000559047197088, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8149467987067177050, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177464145250386500, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8182567873253908946, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209246998698656792, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254282785408917008, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315793664971581945, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359250932751474580, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433719613352686335, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580968234886036309, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629441220769291902, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8635340261216812204, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802980255626373685, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856549798578622408, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953486671956563508, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8954988967669691334, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058967935345139874, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062236177476829529, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4974372954871868964, guid: ef401c92d4abd96478e3d97e6c9f4e5a, type: 3}
@@ -12817,13 +14763,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 768399540964809442, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2002849123790010101, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2002849123790010101, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834856172319781305, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_text
+      value: "\nI still haven\u2019t found the king, maybe he ran away? I\u2019ll
+        have to act on my own. Well, I went into battle."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834856172319781305, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_fontSize
+      value: 13.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834856172319781305, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_margin.w
+      value: -9.0128765
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834856172319781305, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_margin.y
+      value: -30.041273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834856172319781305, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13.6
+      objectReference: {fileID: 0}
     - target: {fileID: 3275602558723152448, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3
+      value: -1.492
       objectReference: {fileID: 0}
     - target: {fileID: 3275602558723152448, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.59
+      value: -4.385
       objectReference: {fileID: 0}
     - target: {fileID: 3275602558723152448, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12832,6 +14811,10 @@ PrefabInstance:
     - target: {fileID: 4294988248955097262, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_Name
       value: GameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412183138269440039, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6535056093974745664, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -12875,6 +14858,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7115077685055752592, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038872669198637434, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093087306262172926, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12946,6 +14937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0371298
@@ -12969,6 +14964,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13097,6 +15096,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2c708f71d76db75449f8c90974fb8e76, type: 3}
       propertyPath: m_Name
       value: Road and grass (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2c708f71d76db75449f8c90974fb8e76, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13265,6 +15268,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13322,6 +15333,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13354,11 +15373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.66
+      value: -0.785
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.08
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13445,6 +15464,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13507,6 +15534,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick and Stone-3 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13568,6 +15603,14 @@ PrefabInstance:
     - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
       propertyPath: m_Name
       value: Wooden stand (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061284398720007822, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302310501732173399, guid: 9bf05c233901e7b4f84b399197a23dbb, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13708,6 +15751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -13719,6 +15766,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13820,6 +15871,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ograda
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c44a5b87e77c1344cbb086fb0553eb26, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c44a5b87e77c1344cbb086fb0553eb26, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13881,6 +15940,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13955,6 +16022,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: dd4ed20b971d64f468b2d3582b232449, type: 3}
       propertyPath: m_Name
       value: Corridor-0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd4ed20b971d64f468b2d3582b232449, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14060,6 +16131,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Royal glass
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 30910d4816dc60a429c5c2f817740256, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 30910d4816dc60a429c5c2f817740256, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14126,6 +16205,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14201,6 +16288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.1949
@@ -14212,6 +16303,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 436a4e1ba21c1614f8b8b6ef1a715bf2, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14318,6 +16413,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road and grass-0 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5b2a772b97547e1489999bbe5a0de739, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14349,11 +16452,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.6
+      value: 8.719
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14443,6 +16546,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
       propertyPath: m_Name
       value: Brick and Stone-3 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: fff436b203284214aaf653f7d7726b89, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14562,7 +16673,7 @@ GameObject:
   - component: {fileID: 2143693414}
   m_Layer: 0
   m_Name: default (3)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
