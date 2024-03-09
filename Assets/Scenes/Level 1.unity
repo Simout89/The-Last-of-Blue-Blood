@@ -3897,9 +3897,35 @@ PrefabInstance:
       propertyPath: Reload
       value: 
       objectReference: {fileID: 8300000, guid: fc1df97c856f06c4f9c0877c13f3704b, type: 3}
+    - target: {fileID: 2002849123790010101, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2002849123790010101, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2002849123790010101, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2103712035735098457, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: NextLevelName
       value: level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834856172319781305, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_text
+      value: 'I need to save these innocent girls. And find the king.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834856172319781305, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_fontSize
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834856172319781305, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4294988248955097262, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_Name
@@ -3908,6 +3934,10 @@ PrefabInstance:
     - target: {fileID: 4605559864782451071, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_PlaneDistance
       value: 3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412183138269440039, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6535056093974745664, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_AnchorMax.y
