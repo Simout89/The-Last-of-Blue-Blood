@@ -71,7 +71,7 @@ public class GoblinAI : MonoBehaviour
                 }
                 else
                 {
-                    RotateLeft();
+                    RotateLeft();      
                 }
             }
             infattack = true;
@@ -97,7 +97,7 @@ public class GoblinAI : MonoBehaviour
             if (_rotate != _newrotate)
             {
                 _rotate = _newrotate;
-                RotateRight();
+                StartCoroutine(RightDelay());
                 audioSource.PlayOneShot(PointStay);
             }
         }
@@ -107,7 +107,7 @@ public class GoblinAI : MonoBehaviour
             if (_rotate != _newrotate)
             {
                 _rotate = _newrotate;
-                RotateLeft();
+                StartCoroutine(LeftDelay());
                 audioSource.PlayOneShot(PointStay);
             }
         }
@@ -171,5 +171,15 @@ public class GoblinAI : MonoBehaviour
         if (currentState == newState) return;
         _animator.Play(newState);
         currentState = newState;
+    }
+    private IEnumerator LeftDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        RotateLeft();
+    }
+    private IEnumerator RightDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        RotateRight();
     }
 }

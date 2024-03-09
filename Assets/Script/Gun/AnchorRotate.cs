@@ -16,7 +16,7 @@ public class Pistol : MonoBehaviour
     private void RotateAnchor()
     {
         Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = 10;
+        mousePosition.z = 7;
         Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Vector3 direction = cursorPosition - transform.position;
         Quaternion rotation = Quaternion.LookRotation(Vector3.forward, direction);

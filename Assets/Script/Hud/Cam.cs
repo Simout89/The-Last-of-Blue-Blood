@@ -16,7 +16,7 @@ public class Cam : MonoBehaviour
     private void LateUpdate()
     {
         var target = _target.position;
-        target.z = -10f;
+        target.z = -7f;
         transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * _speed);
     }
 }
