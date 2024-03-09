@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class ButtonController : MonoBehaviour
 {
     public static UnityEvent OnPlayButton = new UnityEvent();
+    [SerializeField] private GameObject authormenu;
 
     public void ExitButton()
     {
@@ -27,5 +28,13 @@ public class ButtonController : MonoBehaviour
     public void LopataButton()
     {
         Application.OpenURL("https://t.me/lopata_i_hleb");
+    }
+    public void OpenAuthor()
+    {
+        authormenu.active = true;
+    }
+    public void CloseAuthor()
+    {
+        authormenu.active = false;
     }
 }

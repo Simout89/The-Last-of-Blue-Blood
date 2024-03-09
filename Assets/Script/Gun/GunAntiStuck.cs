@@ -22,6 +22,7 @@ public class GunAntiStuck : MonoBehaviour
     {
         if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy") && (other.tag != "Princess"))
         {
+            Debug.Log(other.gameObject.name);
             _gunstuck = true;
         }
     }

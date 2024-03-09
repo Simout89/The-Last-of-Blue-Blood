@@ -10,7 +10,7 @@ public class Loading : MonoBehaviour
     [SerializeField] private GameObject mainMenu;
 
     [SerializeField] private Slider LoadingSlider;
-
+    [SerializeField] private string FirstLevelName;
     public void Awake()
     {
         ButtonController.OnPlayButton.AddListener(LoadLevel);
@@ -24,7 +24,7 @@ public class Loading : MonoBehaviour
     }
     IEnumerator LoadLevelAsync()
     {
-        AsyncOperation loadOperation = SceneManager.LoadSceneAsync("SampleScene");
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(FirstLevelName);
 
         while(!loadOperation.isDone)
         {
