@@ -14027,7 +14027,7 @@ MonoBehaviour:
   loadingScreen: {fileID: 952691625}
   mainMenu: {fileID: 602983053}
   LoadingSlider: {fileID: 78688453}
-  FirstLevelName: Levels
+  FirstLevelName: Level 1
 --- !u!4 &1635430583
 Transform:
   m_ObjectHideFlags: 0
