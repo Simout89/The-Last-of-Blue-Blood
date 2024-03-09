@@ -38,9 +38,23 @@ public class GoblinAI : MonoBehaviour
         goblinbody = GetComponentInChildren<GoblinBody>();
 
     }
+    private bool _raycastcheck()
+    {
+        var direction = Player.transform.position - BodyPoint.position;
+        RaycastHit hit;
+        if (Physics.Raycast(BodyPoint.position, direction, out hit, PlayerDistanceDetection))
+        {
+            if ((hit.collider.gameObject.tag == "Player") || (hit.collider.gameObject.tag == "Gun"))
+                return true;
+            else
+                return false;
+        }
+        else
+            return false;
+    }
     private void Update()
     {
-        if ((Vector3.Distance(GoblinBody.transform.position, Player.transform.position) < PlayerDistanceDetection) || infattack || goblinbody.getdamage)
+        if (((Vector3.Distance(GoblinBody.transform.position, Player.transform.position) < PlayerDistanceDetection) && _raycastcheck()) || infattack || goblinbody.getdamage)
         {
             infattack = true;
             if (goblinbody._damagedelay)

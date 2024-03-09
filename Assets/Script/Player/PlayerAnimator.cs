@@ -67,11 +67,11 @@ public class PlayerAnimator : MonoBehaviour
                 ChangeAnimationState(SQUAD);
             else
                 ChangeAnimationState(SQUAD_RUN);
-        }else if (playerinput.Horizontal != 0 && !_isattacking && !_isjumping)
+        }
+        else if (playerinput.Horizontal != 0 && !_isattacking && !_isjumping)
             ChangeAnimationState(RUN);
         else if ((playerinput.Horizontal == 0) && !_isattacking && !_isjumping)
             ChangeAnimationState(IDLE);
-        else;
     }
     private void ChangeAnimationState(string newState)
     {

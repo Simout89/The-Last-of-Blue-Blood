@@ -17,6 +17,6 @@ public class HudFinishPrincessCount : MonoBehaviour
     }
     private void HandleSetFinishPrincessCountText(int time)
     {
-        text.text = (time).ToString();
+        text.text = $"{time} out of {princess.Length}".ToString();
     }
 }

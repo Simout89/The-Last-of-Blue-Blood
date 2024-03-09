@@ -6,6 +6,9 @@ public class GoblinBody : MonoBehaviour
 {
     [SerializeField] private int Health = 5;
     [SerializeField] private GameObject Goblin;
+    [SerializeField] private Material GoblinMaterial;
+    [SerializeField] private Material GoblinMaterialDamage;
+    [SerializeField] private Renderer Body;
     private bool _playercontact = false;
     public bool getdamage = false;
     public bool _damagedelay = true;
@@ -45,6 +48,7 @@ public class GoblinBody : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
+            StartCoroutine(GetDamageDelay());
             Health--;
             CheckHealt();
             getdamage = true;
@@ -54,5 +58,11 @@ public class GoblinBody : MonoBehaviour
     {
         if (Health <= 0)
             Destroy(Goblin);
+    }
+    IEnumerator GetDamageDelay()
+    {
+        Body.material = GoblinMaterialDamage;
+        yield return new WaitForSeconds(0.2f);
+        Body.material = GoblinMaterial;
     }
 }
