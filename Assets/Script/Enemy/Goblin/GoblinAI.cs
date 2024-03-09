@@ -65,6 +65,14 @@ public class GoblinAI : MonoBehaviour
             if(_firstsound != infattack) {
                 audioSource.PlayOneShot(Aggresive);
                 _firstsound = !_firstsound;
+                if (BodyPoint.transform.position.x - Player.transform.position.x < 0f)
+                {
+                    RotateRight();
+                }
+                else
+                {
+                    RotateLeft();
+                }
             }
             infattack = true;
             if (goblinbody._damagedelay)
@@ -83,26 +91,24 @@ public class GoblinAI : MonoBehaviour
     }
     private void BerserkRotate()
     {
-        if (GoblinBody.transform.position.x - Player.transform.position.x < 0f)
-        {
-            _newrotate = true;
-            if (_rotate != _newrotate)
-            {
-                _rotate = _newrotate;
-                RotateRight();
-                audioSource.PlayOneShot(PointStay);
-
-            }
-        }
-        else
+        if (BodyPoint.transform.position.x - Player.transform.position.x < 0f)
         {
             _newrotate = false;
             if (_rotate != _newrotate)
             {
                 _rotate = _newrotate;
+                RotateRight();
+                audioSource.PlayOneShot(PointStay);
+            }
+        }
+        else
+        {
+            _newrotate = true   ;
+            if (_rotate != _newrotate)
+            {
+                _rotate = _newrotate;
                 RotateLeft();
                 audioSource.PlayOneShot(PointStay);
-
             }
         }
     }

@@ -12294,7 +12294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '\u00282D\u0028programmer\u0028
+  m_text: '\u00282D\u0028programmer\u0028Sound\u0028
 
     fatex6510'
   m_isRightToLeft: 0
@@ -12498,7 +12498,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '\u0028LVL DESIGNER\u0028
+  m_text: ')Good MAn)
 
     lopata i hleb'
   m_isRightToLeft: 0
@@ -12806,7 +12806,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '\u00283D\u0028Amim\u0028gamedesigner\u0028
 
-    filippgora'
+    \u0028Lvl Desigher\u0028filippgora'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26b50a68a50514e4e877ca1e5bd79a75, type: 2}
   m_sharedMaterial: {fileID: 6028217848705081112, guid: 26b50a68a50514e4e877ca1e5bd79a75, type: 2}
@@ -13149,6 +13149,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '\u00283D\u0028Amim\u0028gamedesigner\u0028
 
+    \u0028Lvl Desigher\u0028
+
     filippgora'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26b50a68a50514e4e877ca1e5bd79a75, type: 2}
@@ -13468,8 +13470,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186.47, y: -7.7}
-  m_SizeDelta: {x: 95.35, y: 14.41}
+  m_AnchoredPosition: {x: 185.95, y: -12.72}
+  m_SizeDelta: {x: 94.82, y: 19.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1285989045
 MonoBehaviour:
@@ -13707,9 +13709,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '\u0028LVL DESIGNER\u0028
-
-    lopata i hleb'
+  m_text: )Good MAn)   lopata i hleb
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26b50a68a50514e4e877ca1e5bd79a75, type: 2}
   m_sharedMaterial: {fileID: 6028217848705081112, guid: 26b50a68a50514e4e877ca1e5bd79a75, type: 2}
@@ -13820,7 +13820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1, y: 0}
+  m_AnchoredPosition: {x: -2.6, y: -0.3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1494437105
@@ -13843,7 +13843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '\u00282D\u0028programmer\u0028
+  m_text: '\u00282D\u0028programmer\u0028Sound\u0028
 
     fatex6510'
   m_isRightToLeft: 0
@@ -13908,7 +13908,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -3.039425, y: 0, z: -3.2615318, w: 0}
+  m_margin: {x: -3.039425, y: 0, z: -11.988251, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -14506,8 +14506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185.9, y: -39.67}
-  m_SizeDelta: {x: 94.64, y: 14.14}
+  m_AnchoredPosition: {x: 186.27, y: -44.09}
+  m_SizeDelta: {x: 95.02, y: 9.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1922012469
 MonoBehaviour:

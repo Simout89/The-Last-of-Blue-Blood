@@ -3893,6 +3893,10 @@ PrefabInstance:
       propertyPath: Reload
       value: 
       objectReference: {fileID: 8300000, guid: fc1df97c856f06c4f9c0877c13f3704b, type: 3}
+    - target: {fileID: 2103712035735098457, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: NextLevelName
+      value: level 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4294988248955097262, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_Name
       value: GameObject
