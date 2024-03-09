@@ -25,14 +25,20 @@ public class GoblinAI : MonoBehaviour
     [SerializeField] public GameObject Player;
     [SerializeField] private Animator _animator;
     [SerializeField] private Transform BodyPoint;
+    [SerializeField] private AudioClip Aggresive;
+    [SerializeField] private AudioClip PointStay;
     private GoblinBody goblinbody;
     const string IDLE = "Armature|idle";
     const string WALK = "Armature|Patrolling";
     const string BERSERK = "Armature|Fury mode";
     const string ATTACK = "Armature|Attack ";
     private bool infattack = false;
+    private bool _firstsound = true;
+    private AudioSource audioSource;
+
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         Point1 = Point.position;
         Point2 = GoblinBody.transform.position;
         goblinbody = GetComponentInChildren<GoblinBody>();
@@ -56,6 +62,10 @@ public class GoblinAI : MonoBehaviour
     {
         if (((Vector3.Distance(GoblinBody.transform.position, Player.transform.position) < PlayerDistanceDetection) && _raycastcheck()) || infattack || goblinbody.getdamage)
         {
+            if(_firstsound != infattack) {
+                audioSource.PlayOneShot(Aggresive);
+                _firstsound = !_firstsound;
+            }
             infattack = true;
             if (goblinbody._damagedelay)
                 ChangeAnimationState(BERSERK);
@@ -80,6 +90,8 @@ public class GoblinAI : MonoBehaviour
             {
                 _rotate = _newrotate;
                 RotateRight();
+                audioSource.PlayOneShot(PointStay);
+
             }
         }
         else
@@ -89,6 +101,8 @@ public class GoblinAI : MonoBehaviour
             {
                 _rotate = _newrotate;
                 RotateLeft();
+                audioSource.PlayOneShot(PointStay);
+
             }
         }
     }

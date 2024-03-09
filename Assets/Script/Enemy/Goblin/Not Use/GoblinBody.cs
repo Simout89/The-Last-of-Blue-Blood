@@ -9,9 +9,15 @@ public class GoblinBody : MonoBehaviour
     [SerializeField] private Material GoblinMaterial;
     [SerializeField] private Material GoblinMaterialDamage;
     [SerializeField] private Renderer Body;
+    [SerializeField] private AudioClip Hit;
+    private AudioSource audioSource;
     private bool _playercontact = false;
     public bool getdamage = false;
     public bool _damagedelay = true;
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     private void FixedUpdate()
     {
         DamagePlayer();
@@ -25,6 +31,7 @@ public class GoblinBody : MonoBehaviour
     }
     IEnumerator damageplayer()
     {
+        audioSource.PlayOneShot(Hit);
         _damagedelay = false;
         PlayerHealth.DamageToPlayer.Invoke();
         yield return new WaitForSeconds(0.5f);
