@@ -26,6 +26,7 @@ public class PrincessCollect : MonoBehaviour
     private IEnumerator delay()
     {
         collider.enabled = false;
+        PlayerHealth.HealthPlayer.Invoke();
         audioSource.Play(); 
         ChangeAnimationState("Armature|joy");
         OnCollectPrincess.Invoke();

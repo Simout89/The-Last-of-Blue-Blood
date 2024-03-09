@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
@@ -9,12 +10,27 @@ public class PlayerHealth : MonoBehaviour
 {
     public static UnityEvent DamageToPlayer = new UnityEvent();
     public static UnityEvent<int> OnChangeHealth = new UnityEvent<int>();
+    public static UnityEvent HealthPlayer = new UnityEvent();
     [SerializeField] public int Health = 3;
+    private int maxHealth;
     private void Awake()
     {
+        maxHealth = Health;
+        HealthPlayer.AddListener(HandleHealthPlayer);
         DamageToPlayer.AddListener(Damage);
         StartCoroutine(Delay());
     }
+
+    private void HandleHealthPlayer()
+    {
+        if(maxHealth > Health)
+        {
+            Health++;
+            CheckHealth();
+            OnChangeHealth.Invoke(Health);
+        }
+    }
+
     private void Damage()
     {
         Health--;

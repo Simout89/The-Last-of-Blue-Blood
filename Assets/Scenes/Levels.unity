@@ -705,6 +705,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.1482
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: ab0a60089ef8ff94b8af0b980d304c8e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1131,6 +1135,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 4bafb709098ef7d45b5418f7a6367682, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 4bafb709098ef7d45b5418f7a6367682, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
