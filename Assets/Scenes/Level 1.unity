@@ -2730,7 +2730,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.36
+  m_Intensity: 0.57
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4224,6 +4224,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 874330856504562953, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
+      propertyPath: Hit
+      value: 
+      objectReference: {fileID: 8300000, guid: 0233c7bbadc4f1a47b07e5c748d4b547, type: 3}
     - target: {fileID: 2513603195484063502, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_Name
       value: Goblin
@@ -4232,6 +4236,14 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 55518111}
+    - target: {fileID: 3695242113468999503, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
+      propertyPath: Aggresive
+      value: 
+      objectReference: {fileID: 8300000, guid: 5949a8a5a0072ff4a9f394888af83bc6, type: 3}
+    - target: {fileID: 3695242113468999503, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
+      propertyPath: PointStay
+      value: 
+      objectReference: {fileID: 8300000, guid: 85402793d066ae147a3495cc8af74d8d, type: 3}
     - target: {fileID: 5953981133027697581, guid: 6b13653471c728f458a56d66afb8e1df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.27
@@ -4285,6 +4297,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 504897073762847470, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: Fire
+      value: 
+      objectReference: {fileID: 8300000, guid: 0c42f7a42b335a8489bbc59cba8e350f, type: 3}
+    - target: {fileID: 504897073762847470, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: Reload
+      value: 
+      objectReference: {fileID: 8300000, guid: fc1df97c856f06c4f9c0877c13f3704b, type: 3}
     - target: {fileID: 4294988248955097262, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_Name
       value: GameObject

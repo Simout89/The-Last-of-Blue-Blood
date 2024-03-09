@@ -20,7 +20,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if((other.tag == "Enemy") || (other.tag == "Map"))
+        if((other.tag == "Enemy") || (other.tag == "Map") || (other.tag == "Untagged"))
         {
             Destroy(gameObject);
         }

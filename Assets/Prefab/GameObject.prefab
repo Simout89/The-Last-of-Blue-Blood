@@ -193,6 +193,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5185832718739153609, guid: 0991da75381c4ec4687ba85fca57c3ce, type: 3}
+      propertyPath: Fire
+      value: 
+      objectReference: {fileID: 8300000, guid: 0c42f7a42b335a8489bbc59cba8e350f, type: 3}
+    - target: {fileID: 5185832718739153609, guid: 0991da75381c4ec4687ba85fca57c3ce, type: 3}
+      propertyPath: Reload
+      value: 
+      objectReference: {fileID: 8300000, guid: fc1df97c856f06c4f9c0877c13f3704b, type: 3}
     - target: {fileID: 5407238181394444704, guid: 0991da75381c4ec4687ba85fca57c3ce, type: 3}
       propertyPath: _delay
       value: 0.2
