@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1326136192}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OpenAuthor
+        m_MethodName: AuthorButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6654,7 +6654,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1326136192}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: CloseAuthor
+        m_MethodName: AuthorButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13625,7 +13625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1414602040
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14204,7 +14204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1773662197
 RectTransform:
   m_ObjectHideFlags: 0

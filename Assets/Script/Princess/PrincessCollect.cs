@@ -9,10 +9,10 @@ public class PrincessCollect : MonoBehaviour
     private Animator animator;
     private AudioSource audioSource;
     private string currentState;
-    private Collider collider;
+    private Collider PrincessColider;
     private void Awake()
     {
-        collider = GetComponent<Collider>();
+        PrincessColider = GetComponent<Collider>();
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
     }
@@ -25,7 +25,7 @@ public class PrincessCollect : MonoBehaviour
     }
     private IEnumerator delay()
     {
-        collider.enabled = false;
+        PrincessColider.enabled = false;
         PlayerHealth.HealthPlayer.Invoke();
         audioSource.Play(); 
         ChangeAnimationState("Armature|joy");
