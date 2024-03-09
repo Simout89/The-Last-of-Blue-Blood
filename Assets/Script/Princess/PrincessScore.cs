@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class PrincessScore : MonoBehaviour
 {
@@ -14,8 +12,12 @@ public class PrincessScore : MonoBehaviour
         princess = GameObject.FindGameObjectsWithTag("Princess");
         PrincessCount = 0;
         PrincessCollect.OnCollectPrincess.AddListener(HandlePrincessCollect);
-        MaxPrincess = princess.Length;
+        StartCoroutine(delay());
     }
+    private IEnumerator delay()
+    {
+        yield return new WaitForSeconds(1);
+        MaxPrincess = princess.Length;    }
     private void HandlePrincessCollect()
     {
         PrincessCount++;
