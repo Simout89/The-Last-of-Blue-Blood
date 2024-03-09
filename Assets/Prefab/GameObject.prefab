@@ -193,6 +193,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5407238181394444704, guid: 0991da75381c4ec4687ba85fca57c3ce, type: 3}
+      propertyPath: _delay
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407238181394444704, guid: 0991da75381c4ec4687ba85fca57c3ce, type: 3}
+      propertyPath: _ammocount
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5852682384740334968, guid: 0991da75381c4ec4687ba85fca57c3ce, type: 3}
       propertyPath: m_TagString
       value: Player
