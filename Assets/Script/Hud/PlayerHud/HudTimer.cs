@@ -13,9 +13,20 @@ public class HudTimer : MonoBehaviour
     private bool _isPlaying = true;
     private void Awake()
     {
+        PlayerInput.OnInputState.AddListener(HandleInputState);
+
         Finish.OnFinish.AddListener(HandleFinish);
         _text = GetComponent<TMP_Text>();
     }
+
+    private void HandleInputState(bool arg0)
+    {
+        if(arg0)
+            _isPlaying = true;
+        else
+            _isPlaying = false;
+    }
+
     private void Update()
     {
         if( _isPlaying )
