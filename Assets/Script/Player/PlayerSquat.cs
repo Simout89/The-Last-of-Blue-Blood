@@ -24,7 +24,7 @@ public class PlayerSquat : MonoBehaviour
             _capsule.center = center;
             //body.transform.localScale = new Vector3(1f, 0.5f, 1f);
             Vector3 pos = transform.position;
-            pos.y -= 0.409f;
+            pos.y -= 0.1f;
             transform.position = pos;
         }else
         {
@@ -34,7 +34,7 @@ public class PlayerSquat : MonoBehaviour
             _capsule.center = center;
             //body.transform.localScale = new Vector3(1f, 1f, 1f);
             Vector3 pos = transform.position;
-            pos.y += 0.409f;
+            pos.y += 0.1f;
             transform.position = pos;
         }
     }

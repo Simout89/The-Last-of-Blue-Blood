@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -30,7 +31,17 @@ public class Gun : MonoBehaviour
     private void Update()
     {
         Fire();
+        ReloadButton();
     }
+
+    private void ReloadButton()
+    {
+        if ((_ammo != _ammocount) & Input.GetKeyDown(KeyCode.R) & !_reload)
+        {
+            StartCoroutine(Reload());
+        }
+    }
+
     private void Fire()
     {
         if (_active & Input.GetKeyDown(KeyCode.Mouse0) & !_reload)

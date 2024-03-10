@@ -48,7 +48,6 @@ public class PlayerWalk : MonoBehaviour
                 RotateLeft();
             }
         }
-        else;
         Vector3 velocity = new Vector3(_playerinput.Horizontal, 0, 0) * Speed * _movespeedmultiplier;
         velocity.y = _rb.velocity.y;
         Vector3 worldVelocity = transform.TransformVector(velocity);
