@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class PlayerWalk : MonoBehaviour
     private bool _rotate = true; // false - left , true - right
     private bool _newrotate = false;
     private float _movespeedmultiplier = 1;
+    private float _squadmovespeedmultiplier = 1;
     private Rigidbody _rb;
     private PlayerInput _playerinput;
     private void HandeIsGround(bool flag)
@@ -25,9 +27,18 @@ public class PlayerWalk : MonoBehaviour
     {
         _playerinput = GetComponent<PlayerInput>();
         _rb = GetComponent<Rigidbody>();
+        PlayerInput.OnSquat.AddListener(HandleSquat);
         PlayerCheckGround.IsGround.AddListener(HandeIsGround);
     }
-    
+
+    private void HandleSquat(bool arg0)
+    {
+        if(arg0)
+            _squadmovespeedmultiplier = 0.8f;
+        else
+            _squadmovespeedmultiplier = 1f;
+    }
+
     private void Update()
     {
         if (_playerinput.Horizontal > 0)
@@ -48,7 +59,7 @@ public class PlayerWalk : MonoBehaviour
                 RotateLeft();
             }
         }
-        Vector3 velocity = new Vector3(_playerinput.Horizontal, 0, 0) * Speed * _movespeedmultiplier;
+        Vector3 velocity = new Vector3(_playerinput.Horizontal, 0, 0) * Speed * _movespeedmultiplier * _squadmovespeedmultiplier;
         velocity.y = _rb.velocity.y;
         Vector3 worldVelocity = transform.TransformVector(velocity);
         _rb.velocity = worldVelocity;

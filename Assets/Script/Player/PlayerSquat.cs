@@ -19,7 +19,7 @@ public class PlayerSquat : MonoBehaviour
         if (flag)
         {
             _capsule.height = 1f;
-            var center = _capsule.center;
+            var center = new Vector3(-0.00968360901f, 0.252728462f, 0);
             center.y -= 0.4f;
             _capsule.center = center;
             //body.transform.localScale = new Vector3(1f, 0.5f, 1f);
@@ -29,7 +29,7 @@ public class PlayerSquat : MonoBehaviour
         }else
         {
             _capsule.height = 2f;
-            var center = _capsule.center;
+            var center = new Vector3(-0.00968360901f, -0.1472715f, 0);
             center.y += 0.4f;
             _capsule.center = center;
             //body.transform.localScale = new Vector3(1f, 1f, 1f);
