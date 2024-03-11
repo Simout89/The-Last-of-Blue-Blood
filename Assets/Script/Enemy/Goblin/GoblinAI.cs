@@ -84,8 +84,8 @@ public class GoblinAI : MonoBehaviour
             //direction.y = 0;
             if (direction.y > 0.1f)
                 direction.y = 0.1f;
-            if (direction.y < -0.1f)
-                direction.y = -0.1f;
+            if (direction.y < -0.3f)
+                direction.y = -0.3f;
             GoblinRigidbody.MovePosition(GoblinRigidbody.position + direction * (Speed * 2.5f) * Time.deltaTime);
         }
         else

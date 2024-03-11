@@ -41,7 +41,10 @@ public class PlayerHealth : MonoBehaviour
     private void CheckHealth()
     {
         if (Health <= 0)
+        {
+            HudTimer.FixTime.Invoke();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
     private IEnumerator Delay()
     {
