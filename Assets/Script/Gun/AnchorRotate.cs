@@ -9,8 +9,18 @@ using static UnityEngine.GraphicsBuffer;
 public class Pistol : MonoBehaviour
 {
     [SerializeField] private GameObject _crosshair;
-
+    private bool bossfight = false;
     private bool _state = true;
+    private void Awake()
+    {
+        DragonTrigger.OnBossFight.AddListener(HandleStartFight);
+    }
+
+    private void HandleStartFight(bool arg)
+    {
+        bossfight = arg;
+    }
+
     private void Update()
     {
         PlayerInput.OnInputState.AddListener(HandleInputState);
@@ -27,7 +37,10 @@ public class Pistol : MonoBehaviour
         if(_state)
         {
             Vector3 mousePosition = Input.mousePosition;
-            mousePosition.z = 7;
+            if(bossfight)
+                mousePosition.z = 10;
+            else
+                mousePosition.z = 7;
             Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(mousePosition);
             Vector3 direction = cursorPosition - transform.position;
             Quaternion rotation = Quaternion.LookRotation(Vector3.forward, direction);
