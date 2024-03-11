@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DragonAttack : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class DragonAttack : MonoBehaviour
     private int counter = 0;
     private bool _flyAttack = false;
     private bool _idleAttack = false;
+
+    public static UnityEvent OnCastFireBall = new UnityEvent();
+
     private void Awake()
     {
         DragonPatrol.OnBossPatrol.AddListener(HandleBossPatrol);
@@ -28,7 +32,8 @@ public class DragonAttack : MonoBehaviour
     {
         if(_flyAttack )
         {
-            if(counter < 5)
+            OnCastFireBall.Invoke();
+            if (counter < 5)
             {
                 counter++;
                 Rigidbody bullet = Instantiate(_miniFireBall, Mouth.position, Quaternion.identity);
@@ -47,7 +52,7 @@ public class DragonAttack : MonoBehaviour
                 Quaternion rotation = Quaternion.LookRotation(Vector3.forward, direction);
                 bullet.transform.rotation = rotation;
                 bullet.AddForce(direction * (ForceProjectile), ForceMode.VelocityChange);
-                yield return new WaitForSeconds(FireRate * 2);
+                yield return new WaitForSeconds(FireRate);
                 StartCoroutine(DelayFlyAttack());
             }
         }

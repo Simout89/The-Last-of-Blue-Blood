@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class DragonHealth : MonoBehaviour
 {
     public static UnityEvent<int> OnGetDamage = new UnityEvent<int>();
+    public static UnityEvent OnDeath = new UnityEvent();
 
     [SerializeField] private int health = 5;
     private bool Damable = false;
@@ -40,6 +41,8 @@ public class DragonHealth : MonoBehaviour
     private void CheckHealth()
     {
         if (health <= 0)
-            Debug.Log("Dragon Die");
+        {
+            OnDeath.Invoke();
+        }
     }
 }

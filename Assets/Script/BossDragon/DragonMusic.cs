@@ -15,7 +15,6 @@ public class DragonMusic : MonoBehaviour
 
     private void HandleBossFight(bool arg0)
     {
-        audioSource.Stop();
         audioSource.clip = Music;
         audioSource.Play();
     }

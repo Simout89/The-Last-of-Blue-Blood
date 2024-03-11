@@ -13,8 +13,7 @@ public class DragonPatrol : MonoBehaviour
     [SerializeField] private Transform Point2;
     public static UnityEvent<bool> OnBossPatrol = new UnityEvent<bool>();
     private Vector3 point1;
-    private Vector3 point2;
-    private bool Target = false; // point1 = false, point2 = true
+    private Vector3 point2;// point1 = false, point2 = true
     private bool Patrol = false;
     private void Awake()
     {
