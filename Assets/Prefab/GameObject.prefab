@@ -455,8 +455,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 26b50a68a50514e4e877ca1e5bd79a75, type: 2}
-  m_sharedMaterial: {fileID: 6028217848705081112, guid: 26b50a68a50514e4e877ca1e5bd79a75, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4127ebb5199f82d408d700a92638442a, type: 2}
+  m_sharedMaterial: {fileID: -2199372296031951427, guid: 4127ebb5199f82d408d700a92638442a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -480,8 +480,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 18.7
+  m_fontSizeBase: 18.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -372.3563, w: -59.372654}
+  m_margin: {x: 4.42704, y: 5.59667, z: -367.03583, w: -54.955524}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextMenu: {fileID: 2228194779241097551}
   tMP: {fileID: 5909646463695672100}
-  speed: 0.1
+  speed: 0.05
 --- !u!1001 &236492060809435579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1152,11 +1152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7891222970679603815, guid: 0991da75381c4ec4687ba85fca57c3ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.21
+      value: -30.36
       objectReference: {fileID: 0}
     - target: {fileID: 7891222970679603815, guid: 0991da75381c4ec4687ba85fca57c3ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.68
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: 7891222970679603815, guid: 0991da75381c4ec4687ba85fca57c3ce, type: 3}
       propertyPath: m_LocalPosition.z

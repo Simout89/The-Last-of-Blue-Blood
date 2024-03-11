@@ -25,7 +25,7 @@ public class DiscordManager : MonoBehaviour
 
     private void HandleNext()
     {
-        ChangeActivity();
+        StartCoroutine(delay());
     }
 
     void OnDisable()
@@ -52,5 +52,12 @@ public class DiscordManager : MonoBehaviour
     void Update()
     {
         discord.RunCallbacks();
+    
+    }
+    
+    private IEnumerator delay()
+    {
+        yield return new WaitForSeconds(3);
+        ChangeActivity();
     }
 }
