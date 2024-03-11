@@ -17,15 +17,6 @@ public class DragonSound : MonoBehaviour
         DragonTrigger.OnBossFight.AddListener(HandleBossFight);
         DragonIdle.OnBossIdle.AddListener(HandleBossIdle);
         DragonAttack.OnCastFireBall.AddListener(HandleCastFireBall);
-        DragonPatrol.OnBossPatrol.AddListener(HandleBossPatrol);
-    }
-
-    private void HandleBossPatrol(bool arg0)
-    {
-        if(arg0)
-            audioSource.Play();
-        else
-            audioSource.Stop();
     }
 
     private void HandleCastFireBall()
