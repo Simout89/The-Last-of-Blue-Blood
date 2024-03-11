@@ -23,13 +23,9 @@ public class DragonSound : MonoBehaviour
     private void HandleBossPatrol(bool arg0)
     {
         if(arg0)
-        {
             audioSource.Play();
-        }
         else
-        {
             audioSource.Stop();
-        }
     }
 
     private void HandleCastFireBall()
