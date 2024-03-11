@@ -10,6 +10,7 @@ public class Finish : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            PlayerInput.OnInputState.Invoke(false);
             OnFinish.Invoke();
             Destroy(gameObject);
         }

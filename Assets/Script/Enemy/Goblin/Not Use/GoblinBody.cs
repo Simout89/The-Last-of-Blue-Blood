@@ -64,7 +64,10 @@ public class GoblinBody : MonoBehaviour
     private void CheckHealt()
     {
         if (Health <= 0)
+        {
             Destroy(Goblin);
+            KillCounter.OnKill.Invoke();
+        }
     }
     IEnumerator GetDamageDelay()
     {

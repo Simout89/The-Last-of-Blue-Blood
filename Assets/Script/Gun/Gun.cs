@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -16,6 +17,7 @@ public class Gun : MonoBehaviour
     private int _ammo;
     private bool _active = true;
     private bool _reload = false;
+    private bool _state = true;
 
     public static UnityEvent<int> OnFire = new UnityEvent<int>();
     public static UnityEvent OnFireSound = new UnityEvent();
@@ -23,14 +25,33 @@ public class Gun : MonoBehaviour
 
     private void Awake()
     {
+        PlayerInput.OnInputState.AddListener(HandleInputState);
         _ammo = _ammocount;
         StartCoroutine(Delay());
     }
 
+    private void HandleInputState(bool arg0)
+    {
+        _state = arg0;
+    }
+
     private void Update()
     {
-        Fire();
+        if(_state )
+        {
+            Fire();
+            ReloadButton();
+        }
     }
+
+    private void ReloadButton()
+    {
+        if ((_ammo != _ammocount) & Input.GetKeyDown(KeyCode.R) & !_reload)
+        {
+            StartCoroutine(Reload());
+        }
+    }
+
     private void Fire()
     {
         if (_active & Input.GetKeyDown(KeyCode.Mouse0) & !_reload)
