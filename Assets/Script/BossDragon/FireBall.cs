@@ -18,7 +18,6 @@ public class FireBall : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name);
         if (other.tag == "Player")
             PlayerHealth.DamageToPlayer.Invoke();
         if ( (other.tag != "Gun") && (other.tag != "Bullet"))
