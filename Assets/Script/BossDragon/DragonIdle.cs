@@ -43,6 +43,8 @@ public class DragonIdle : MonoBehaviour
     }
     private IEnumerator SpawnMinion()
     {
+        yield return new WaitForSeconds(0.1f);
+        Body.transform.position = idlePoint;
         System.Random rnd = new System.Random();
         Minion = rnd.Next(MinionCountMin, MinionCountMax);
         while (Minion != 0)

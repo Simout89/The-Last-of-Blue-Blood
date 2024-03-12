@@ -1212,8 +1212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a0024c51a310f4cb54eb2c7062763d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdleTime: 5
-  PatrolTime: 10
+  IdleTime: 6
+  PatrolTime: 20
 --- !u!114 &1118093140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,7 +1252,7 @@ MonoBehaviour:
   Mouth: {fileID: 1567389896}
   _miniFireBall: {fileID: 1705740460153679529, guid: 6ead1c3af29119c48bf2236a6349b4f6, type: 3}
   _FireBall: {fileID: 1705740460153679529, guid: 656b9a32f90bf1b4795c485fa1ff3164, type: 3}
-  FireRate: 1
+  FireRate: 0.7
   ForceProjectile: 1
 --- !u!1001 &1150891185
 PrefabInstance:
@@ -2711,7 +2711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4cb87380cc309043a2c10d5ea4b0c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 4
+  health: 50
   Dragon: {fileID: 1118093136}
   Egg: {fileID: 8361098277595608691, guid: c1f6e500b375dde4ba42710c6b6a785f, type: 3}
 --- !u!114 &5631589062610921669
