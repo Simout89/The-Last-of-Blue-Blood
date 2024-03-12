@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    private bool _authormenustate = false;
+
     public static UnityEvent OnPlayButton = new UnityEvent();
     [SerializeField] private GameObject authormenu;
+    [SerializeField] private GameObject settingsmenu;
+    [SerializeField] private Slider slidervolume;
 
     public void ExitButton()
     {
@@ -33,7 +36,14 @@ public class ButtonController : MonoBehaviour
 
     public void AuthorButton()
     {
-        authormenu.SetActive(!_authormenustate);
-        _authormenustate = !_authormenustate;
+        authormenu.SetActive(!authormenu.active);
+    }
+    public void SettingsButton()
+    {
+        settingsmenu.SetActive(!settingsmenu.active);
+    }
+    public void ChangeVolume()
+    {
+        AudioListener.volume = slidervolume.value;
     }
 }
