@@ -15668,6 +15668,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4002149292087144487, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: NextLevelName
+      value: Scene 4 final
+      objectReference: {fileID: 0}
     - target: {fileID: 4294988248955097262, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_Name
       value: GameObject
