@@ -15,12 +15,19 @@ public class DragonAttack : MonoBehaviour
     private int counter = 0;
     private bool _flyAttack = false;
     private bool _idleAttack = false;
+    private bool live = true;
 
     public static UnityEvent OnCastFireBall = new UnityEvent();
 
     private void Awake()
     {
         DragonPatrol.OnBossPatrol.AddListener(HandleBossPatrol);
+        DragonHealth.OnDeath.AddListener(HandleDeath);
+    }
+
+    private void HandleDeath()
+    {
+        _flyAttack = false;
     }
 
     private void HandleBossPatrol(bool arg0)

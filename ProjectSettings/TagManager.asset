@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Map
   - Princess
+  - DragonFireBall
   layers:
   - Default
   - TransparentFX

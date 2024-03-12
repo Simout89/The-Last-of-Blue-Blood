@@ -20,14 +20,14 @@ public class GunAntiStuck : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy") && (other.tag != "Princess"))
+        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy") && (other.tag != "Princess") && (other.tag != "DragonFireBall"))
         {
             _gunstuck = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy") && (other.tag != "Princess"))
+        if ((other.tag != "Bullet") && (other.tag != "Player") && (other.tag != "Enemy") && (other.tag != "Princess") && (other.tag != "DragonFireBall"))
         {
             _gunstuck = false;
         }

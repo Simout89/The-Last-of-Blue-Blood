@@ -17,7 +17,7 @@ public class HudBossBar : MonoBehaviour
 
     private void HandleBossFight(bool arg0)
     {
-        BossBarHud.SetActive(true);
+        BossBarHud.SetActive(arg0);
     }
 
     private void HandleGetDamage(int arg0)
