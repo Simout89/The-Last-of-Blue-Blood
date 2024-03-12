@@ -11,6 +11,7 @@ public class DragonHealth : MonoBehaviour
     
     [SerializeField] private int health = 5;
     [SerializeField] private GameObject Dragon;
+    [SerializeField] private Rigidbody Egg;
     private bool Damable = false;
     private ParticleSystem particle;
     private void Awake()
@@ -52,6 +53,7 @@ public class DragonHealth : MonoBehaviour
     }
     private IEnumerator delay()
     {
+        Instantiate(Egg, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(5);
         Destroy(Dragon);
         DragonTrigger.OnBossFight.Invoke(false);
