@@ -15944,6 +15944,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -16.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2103712035735098457, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
+      propertyPath: NextLevelName
+      value: Scene 4 final
+      objectReference: {fileID: 0}
     - target: {fileID: 2834856172319781305, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_text
       value: "\nI still haven\u2019t found the king, maybe he ran away? I\u2019ll
@@ -16039,11 +16043,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9038872669198637434, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9093087306262172926, guid: c4483d6b3f183784c81f8d6ba08c9d4c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
