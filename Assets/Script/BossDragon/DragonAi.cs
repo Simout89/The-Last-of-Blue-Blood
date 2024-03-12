@@ -21,6 +21,7 @@ public class DragonAi : MonoBehaviour
 
     private IEnumerator Idle()
     {
+
         DragonIdle.OnBossIdle.Invoke(true);
         yield return new WaitForSeconds(IdleTime);
         DragonIdle.OnBossIdle.Invoke(false);

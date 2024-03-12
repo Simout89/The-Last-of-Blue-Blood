@@ -9,6 +9,7 @@ public class DiscordManager : MonoBehaviour
     KillCounter killCounter;
     TryCount tryCount;
     TotalPrincess totalPrincess;
+    TotalTime totalTime;
     Discord.Discord discord;
     void Start()
     {
@@ -19,6 +20,7 @@ public class DiscordManager : MonoBehaviour
         totalPrincess = GetComponent<TotalPrincess>();
         tryCount = GetComponent<TryCount>();
         killCounter = GetComponent<KillCounter>();
+        totalTime = GetComponent<TotalTime>();
         discord = new Discord.Discord(598486258573901825, (ulong)Discord.CreateFlags.NoRequireDiscord);
         ChangeActivity();
     }
@@ -37,8 +39,8 @@ public class DiscordManager : MonoBehaviour
         var activityManager = discord.GetActivityManager();
         var activity = new Discord.Activity
         {
-            State = $"Death: {tryCount.DeathCount} | Kill: {killCounter.goblin}",
-            Details = $"{SceneManager.GetActiveScene().name} | Princess: {totalPrincess.CountPrincess}/{totalPrincess.MaxPrincess}",
+            State = $"Death: {tryCount.DeathCount}| KillEnemy: {killCounter.goblin}",
+            Details = $"{SceneManager.GetActiveScene().name}| Princess: {totalPrincess.CountPrincess}| Time: {Mathf.Floor(totalTime.totalTime / 60).ToString("00")}:{(totalTime.totalTime % 60).ToString("00")}",
             Assets =
             {
                 LargeImage = "button"
@@ -58,6 +60,9 @@ public class DiscordManager : MonoBehaviour
     private IEnumerator delay()
     {
         yield return new WaitForSeconds(3);
+    }
+    private void FixedUpdate()
+    {
         ChangeActivity();
     }
 }

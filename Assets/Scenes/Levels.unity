@@ -2553,7 +2553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4cb87380cc309043a2c10d5ea4b0c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 50
   Dragon: {fileID: 1118093136}
 --- !u!114 &5631589062610921669
 MonoBehaviour:
